@@ -41,7 +41,7 @@
 
 /* Tufte CSS styles */
 html {
-    font-size: 15px;
+    font-size: 10pt;
 }
 
 body {
@@ -70,9 +70,13 @@ h1 {
     font-weight: 900;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
-    margin-right: 10%;
-    font-size: 14vmin;
+    margin-right: 12%;
+    font-size: 11vmin;
     line-height: 1.2;
+}
+
+h1.chapter-title {
+    margin-left: 5%;
 }
 
 h2 {
@@ -81,6 +85,7 @@ h2 {
     font-weight: 500;
     margin-top: 2.1rem;
     margin-bottom: 1.4rem;
+    margin-right: 10%;
     font-size: 2.2rem;
     line-height: 1.6;
 }
@@ -124,6 +129,34 @@ p.breadcrumb {
     font-size: 1rem;
 }
 
+.author {
+    margin-left: 1.2em;
+    margin-bottom: 0.5em;
+    font-size: 60%;
+    font-family: 'Noto Serif KR', serif;
+    white-space: nowrap;
+}
+
+.description {
+    display: block;
+    margin-right: 5%;
+    color: #174d25;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 150%;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.book {
+    margin-right: 15%;
+    margin-top: 5rem;
+    word-break:keep-all;
+}
+
+h2.main-link{
+    margin-top: 50px;
+}
+
 .numeral {
     font-family: et-book-roman-old-style;
 }
@@ -137,8 +170,8 @@ article {
 }
 
 section {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 p,
