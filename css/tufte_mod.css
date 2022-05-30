@@ -41,7 +41,8 @@
 
 /* Tufte CSS styles */
 html {
-    font-size: 10pt;
+    font-size: 12pt;
+    word-break:keep-all;
 }
 
 body {
@@ -150,7 +151,6 @@ p.breadcrumb {
 .book {
     margin-right: 15%;
     margin-top: 5rem;
-    word-break:keep-all;
 }
 
 h2.main-link{
@@ -187,6 +187,7 @@ p {
     margin-bottom: 1.4rem;
     padding-right: 0;
     vertical-align: baseline;
+    line-height: 160%;
 }
 
 /* Chapter Epigraphs */
