@@ -41,7 +41,7 @@
 
 /* Tufte CSS styles */
 html {
-    font-size: 12pt;
+    font-size: 11pt;
     word-break:keep-all;
 }
 
@@ -180,6 +180,15 @@ ol,
 ul {
     font-size: 1.4rem;
     line-height: 2rem;
+}
+
+.listblock {
+  margin-right: 5%;
+  color: #174d25;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 150%;
+  font-family: 'Gothic A1', sans-serif;
 }
 
 p {
@@ -363,7 +372,7 @@ img {
     margin-right: -60%;
     width: 50%;
     margin-top: 0.3rem;
-    margin-bottom: 0;
+    margin-bottom: 1.2rem;
     font-size: 1.1rem;
     line-height: 1.3;
     vertical-align: baseline;
@@ -418,7 +427,7 @@ div.table-wrapper {
 }
 
 code, pre > code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: Consolas, 'Nanum Gothic Coding', "Liberation Mono", Menlo, Courier, monospace;
     font-size: 1.0rem;
     line-height: 1.42;
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
@@ -436,7 +445,10 @@ h3 > code {
 
 .marginnote > code,
 .sidenote > code {
-    font-size: 1rem;
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    line-height: 1.0rem;
 }
 
 pre > code {
