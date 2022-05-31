@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: 우리를 닮은, 기계 페르소나
+title: 우리를 닮은, 기계 페르소나?
 chapter: chapter 2
 author: 정앎
 ---
@@ -8,10 +8,21 @@ author: 정앎
   <p class="breadcrumb"> <a href="../">Friendly Errors i18n Book</a> > {{chapter}} </p>
 </div>
 <article>
-  <img class="bubble" src="../css/bubble-top.svg">
-  <h1 class="chapter-title">{{title}}</h1>
-  <img class="bubble" src="../css/bubble-bottom.svg">
-  <p class="subtitle">{{author}}</p>
+  <div class="bubble-title">
+    <img src="../css/bubble-top.svg">
+    <h1>{{title}}</h1>
+    <img src="../css/bubble-bottom.svg">
+    <p class="subtitle">{{ author }}</p>
+  </div>
+  <img class="break">
+  <div class="toc">
+    <p class="toc_title">목차</p>
+      <ol class="toc_list">
+        <li><a href="#consistency">일관된 페르소나를 지니는 에러 메시지</a></li>
+        <li><a href="#code_of_conduct">행동강령을 따르는 기계 페르소나</a></li>
+        <li><a href="#care_respect_openmind">존중과 배려, 그리고 열린 마음</a></li>
+      </ol>
+  </div>
 
   <img class="break" src="../css/friendly-bar2.svg">
 

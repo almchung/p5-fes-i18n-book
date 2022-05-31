@@ -8,10 +8,21 @@ author: 전유진
   <p class="breadcrumb"> <a href="../">Friendly Errors i18n Book</a> > {{chapter}} </p>
 </div>
 <article>
-  <img class="bubble" src="../css/bubble-top.svg">
-  <h1 class="chapter-title">{{title}}</h1>
-  <img class="bubble" src="../css/bubble-bottom.svg">
-  <p class="subtitle">{{ author }}</p>
+  <div class="bubble-title">
+    <img src="../css/bubble-top.svg">
+    <h1>{{title}}</h1>
+    <img src="../css/bubble-bottom.svg">
+    <p class="subtitle">{{ author }}</p>
+  </div>
+  <img class="break">
+  <div class="toc">
+    <p class="toc_title">목차</p>
+      <ol class="toc_list">
+        <li><a href="#gaze">위계를 만드는 위험한 시선</a></li>
+        <li><a href="#unlimited_receiver">메시지의 청자를 제한하지 않기</a></li>
+        <li><a href="#precise_kindness">정확한 친절함에 도달하기 위한 고민</a></li>
+      </ol>
+  </div>
 
   <img class="break" src="../css/friendly-bar2.svg">
 
@@ -49,7 +60,7 @@ author: 전유진
       FES가 이미 친절함이라는 표현을 그 이름에 달고 존재를 선언하면서부터 어쩌면 운명적으로 마주할 수밖에 없는 어려움이 있을 것입니다. 일상 생활에서도 친절함의 정도와 방식을 받아들이는 사람에 따라, 그 친절함이 제공되는 상황에 따라 모두 다르게 인식하니까요. 이는 동시에 언어의 효율성과 윤리적 가치가 상충하는 문제로도 생각해볼 수 있습니다. 위에 든예시에서도 특정 인물(-자, -er)로 표현하는 것이 언어적으로는 간편하고 쉬운 전달일 수 있지만, 이와 같은 편의성으로 인해 어떤 개념이 지나치게 단순화되거나 불필요한 무언가를 낳을 수 있다는 사실을 염두해야 합니다.
     </p>
     <p>
-      번역 과정에서 우리는 분명히 그 청자에 집중해야 하지만, 그 이유로 그들을 어떤 정의에 손쉽게 가두거나 꼬리표를 붙이지는(labeling) 말아야 할 것입니다. FES의 타겟팅 방식 또한 역시 ‘친절함'이라는 본원적 목표에 부합해야 하며, 대상화(objectifying)나 타자화(otherizing)가 되지 않도록 주의해야 합니다. 어쩌면 FES의 번역에서 우선적으로 집중해야 하는 것은 그 청자가 누구인가-를 상정하는 일보다는, 무엇이 친절함인가-를 고민하는 쪽이 아닐까요.<label for="sn-kind_discussion" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-kind_discussion" class="margin-toggle"/><span class="sidenote">그리고 이 고민은 <em>[0:Friendly의 틈새들]</em> 섹션에서 한층 더 짙어지고, <em>[2:존중과 배려, 그리고 열린 마음]</em> 섹션에서 -우리는 왜 친절해야 하는가- 라는 논의로 확장됩니다. </span> 결국 코드를 처음 접하는 이들부터 코드에 익숙한 이들까지, 에러메시지를 맞닥뜨린 상황에 놓인 모든 이들을 고려하면서 정말로 도움이 되는 친절함이란 무엇인지 찾아가는 과정이 바로 FES 번역의 핵심이 아닐까 합니다.
+      번역 과정에서 우리는 분명히 그 청자에 집중해야 하지만, 그 이유로 그들을 어떤 정의에 손쉽게 가두거나 꼬리표를 붙이지는(labeling) 말아야 할 것입니다. FES의 타겟팅 방식 또한 역시 ‘친절함'이라는 본원적 목표에 부합해야 하며, 대상화(objectifying)나 타자화(otherizing)가 되지 않도록 주의해야 합니다. 어쩌면 FES의 번역에서 우선적으로 집중해야 하는 것은 그 청자가 누구인가-를 상정하는 일보다는, 무엇이 친절함인가-를 고민하는 쪽이 아닐까요.<label for="sn-kind_discussion" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-kind_discussion" class="margin-toggle"/><span class="sidenote">그리고 이 고민은 <em>[<a href="../ch0#incompleteness">0:Friendly? 🤔 Friendly의 틈새들</a>]</em> 섹션에서 한층 더 짙어지고, <em>[<a href="../ch2#care_respect_openmind">2:존중과 배려, 그리고 열린 마음</a>]</em> 섹션에서 -우리는 왜 친절해야 하는가- 라는 논의로 확장됩니다. </span> 결국 코드를 처음 접하는 이들부터 코드에 익숙한 이들까지, 에러메시지를 맞닥뜨린 상황에 놓인 모든 이들을 고려하면서 정말로 도움이 되는 친절함이란 무엇인지 찾아가는 과정이 바로 FES 번역의 핵심이 아닐까 합니다.
     </p>
   </section>
 </article>

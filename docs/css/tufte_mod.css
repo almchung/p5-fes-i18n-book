@@ -41,15 +41,14 @@
 
 /* Tufte CSS styles */
 html {
-    font-size: 11pt;
+    font-size: 1em;
     word-break:keep-all;
 }
 
 body {
-    width: 87.5%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 12.5%;
     line-height: 1.5;
     font-family: 'Noto Serif KR', serif;
     background-color: #fffff8;
@@ -76,8 +75,29 @@ h1 {
     line-height: 1.2;
 }
 
-h1.chapter-title {
-    margin-left: 5%;
+div.bubble-title{
+  width: 80%;
+  min-width: 300px;
+  display: inline-block;
+}
+
+div.bubble-title > h1 {
+  font-size: 8vw;
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+div.bubble-title > img {
+  width: 100%;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  display: block;
+}
+
+div.bubble-title > p.subtitle {
+  text-align: right;
+  font-size: 1.6rem;
+  margin-right: 0;
 }
 
 h2 {
@@ -95,9 +115,10 @@ h3 {
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.7rem;
     margin-top: 2rem;
     margin-bottom: 1.4rem;
+    margin-right: 40%;
+    font-size: 1.7rem;
     line-height: 1.6;
 }
 
@@ -115,7 +136,7 @@ p.subtitle {
     font-style: italic;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     display: block;
     margin-right: 20%;
     text-align: right;
@@ -233,13 +254,6 @@ img.logo {
   display: block;
 }
 
-img.bubble {
-  width: 90%;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  display: block;
-}
-
 img.breaktop {
   max-height: 8vmin;
   padding-top: 0rem;
@@ -249,8 +263,7 @@ img.breaktop {
 
 img.break {
   max-height: 4.5vmin;
-  padding-top: 10rem;
-  padding-bottom: 0rem;
+  padding-top: 3rem;
   display: block;
 }
 
