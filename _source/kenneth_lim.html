@@ -1,34 +1,24 @@
-<!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/p5-fes-i18n-book/css/tufte_mod.css">
-    <link rel="stylesheet" href="/css/tufte_mod.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;500;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans:400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-    <title>오픈 소스 소프트웨어 번역 과정에서 따르는 과제들</title>
-  </head>
-  <body>
-    <div>
-  <p class="breadcrumb"> <a href="../">Friendly Errors i18n Book</a> > interview </p>
+---
+layout: layout
+title: 오픈 소스 소프트웨어 번역 과정에서 따르는 과제들
+chapter: interview with Kenneth Lim
+author: Kenneth Lim & Alm Chung
+---
+<div>
+  <p class="breadcrumb"> <a href="../">Friendly Errors i18n Book</a> > {{chapter}} </p>
 </div>
 <article>
   <div class="bubble-title">
     <img src="../css/bubble-top.svg">
-    <h1>오픈 소스 소프트웨어 번역 과정에서 따르는 과제들</h1>
+    <h1>{{title}}</h1>
     <img src="../css/bubble-bottom.svg">
-    <p class="subtitle">Kenneth Lim</p>
+    <p class="subtitle">{{ author }}</p>
   </div>
   <img class="break">
   <div class="toc">
     <p class="toc_title">목차</p>
       <ol class="toc_list">
-        <li><a href="#website_translation">p5js 웹사이트 번역의 시작</a></li>
+        <li><a href="#starting_translation">p5js 번역의 시작</a></li>
         <li><a href="#dev_translation_tools">번역을 위한 도구 만들기</a></li>
         <li><a href="#i18n_issues">세계화 이슈들</a></li>
         <li><a href="#new_contributors">미래의 기여자분들을 초대하며</a></li>
@@ -39,13 +29,13 @@
 
   <section>
     <p>
-      p5js 코어 라이브러리 및 웹사이트 담당자 (steward)로 활발히 활동하고 계시는 Kenneth Lim님과 지난 12월 인터뷰를 진행 했습니다. 웹사이트 번역 작업의 시작과 번역 과정 중 겪는 과제들에 대해 이야기 들어보았습니다.
+      p5js 코어 라이브러리 및 웹사이트 담당자 (steward)로 활발히 활동하고 계시는 <a href="https://limzykenneth.com">Kenneth Lim</a>님과 지난 12월 인터뷰를 진행 했습니다. p5js 웹사이트 및 기술문서 번역 작업이 어떻게 시작되었는지, 오픈소스 소프트웨어를 번역, 유지하는데에서 겪는 특별한 고민들에 대해 이야기 들어보았습니다.
     </p>
   </section>
 
   <section>
-    <h2 id="website_translation">p5js 웹사이트 번역의 시작</h2>
-    <p>
+    <h2 id="starting_translation">p5js 웹사이트 번역의 시작</h2>
+    <p class="description">
       A (Alm Chung): p5.js를 맨 처음 어떻게 만나셨고, 오픈 소스 소프트웨어에 언제부터 기여하기 시작했나요?</p>
     <p>
       K (Kenneth Lim): 제가 p5.js를 만나게 된 것은, 다른 분들의 경우랑 크게 다를 것 없었다고 생각해요. 대학교에서 접하게 된 프로세싱(Processing)을 통해 인연이 시작되었죠. 예전에도 조금씩 코딩을 해보긴했지만, 프로세싱은 처음 시작해보는 것이었고 엄청 진지하게 뭘 한다거나 그런 건 아니었어요. p5.js는 2015년도나 2016년도 쯤에 접했던 것 같네요. 첫 느낌은 프로세싱이랑 같았는데, 제가 더 자주쓰던 자바스크립트(Javascript) 언어로 되어있어서 바로 쓰기 시작했어요.</p>
@@ -55,13 +45,13 @@
     <p>
       거기에서 시작해서, 천천히 더 스케일 크고 기술적인 작업들로 옮겨갔어요. 한번은, 스마트폰 센서 데이터(예: 가속도계(accelerometer) 데이터)를 다루는 부분을 개선하는 프로젝트를 맡은 적이 있어요. 이미 있던 코드가 제대로 작동하고 있지 않았죠. 이 프로젝트를 하게 된 계기가, 제 개인작업에서 비슷한 API를 썼던 경험이 있어서 기여를 해볼 수 있지 않을까 생각했어요. 그래서 이 프로젝트를 진행하다가, 여러 우연이 겹쳐서 여기까지 오게 되었네요.
       </p>
-    <p>
+    <p class="description">
       A: 그럼 p5js에 참여하시게 된 계기가 개인 작업에서 출발한 것이었군요. 자신의 작업에서 라이브러리를 쓰다보면 자연스럽게 버그를 찾기도 하고, 개선점들이 떠오르기도 하고 그렇죠. 그러다가 직접 개선 작업에 손을 대게 되고요.
       </p>
     <p>
       K: 네, 많은 기여자 분이 그런 식으로 시작하시는 것 같아요. 게다가 제가 기여를 하려고 했던 부분이 제가 전문적으로 이미 잘 파악하고 있는 내용인 것도 아니었어요. 오히려 코드의 문제점들을 대략 인지하고 있지만, 실제로 개선 작업을 하기전에 공식 MDN (Mozilla Developer Network) 웹 기술 문서들을 공부하거나 API가 실제로 어떻게 작동하나 시간을 써서 탐구해봐야하는 케이스에 가까웠죠. 저는 p5js 프로젝트가, 누군가가 이미 준비된 전문가가 아니어도 기여를 할 수 있다는 점이 너무 좋다고 생각해요. 그저 자신이 선택한 지점에 시간을 쓰면 되는 거죠. 저희가 빨리 진행하라고 닥달하지도 않고요. “어 아직 안 끝났어?” 이런 말도 절대 안하고요! 그저 자기 속도에 맞춰 배우고, 고칠 것을 고치면 되죠. 기여의 과정에서 가장 중요한 것도 배움이고요.
       </p>
-    <p>
+    <p class="description">
       A: 센서 데이터 프로젝트 다음으로 진행하신 큰 프로젝트는 p5js 공식 문서 웹사이트를 번역하시는 거였죠? 왜 다음으로 이 프로젝트를 작업하시기로 결정하셨었나요?
       </p>
     <p>
@@ -70,19 +60,19 @@
     <p>
       이런 사정으로 번역 프로젝트는 한 일년쯤 멈춰있었고, 결국 2018년도에 시작된거에요. 번역 프로젝트는 좋은 아이디어였지만, 다음 해에 한번 더 지원 과정을 거쳐야 했어요. 마침 지원을 한 그 때 Lauren이 대학에서 연구기금 공모전에 지원을 준비하고 있었는데, 제 프로포절이 공모전에 딱 잘 맞았어요. 그래서 Lauren이 제 프로포절로 연구기금 공모전을 내봐도 좋겠냐고 물어왔고, 저는 흔쾌히 승락했죠. 이 프로포절로 저희는 기금을 받았고, 멘토 Xin도 찾았어요. 이 모든게 2018년도 한 해 안에 일어났죠. 어떻게 다 셋업하고 진행할 수 있었네요.
       </p>
-    <p>
+    <p class="description">
       A: 이 경험을 상세하게 들려주셔서 감사합니다. 공모전에서 지원하는 많은 분들은 선정 과정이 순차적으로 딱딱 진행해서 잘려나가는 것이라고 생각하기 쉽거든요.
       </p>
     <p>
       K: 저희 repo에 pull을 하시려는 분들, 특히 기술 문서 번역을 pull 하시려는 분들께 가끔 설명해드리려 하곤 해요. 전체 기술 문서 번역 작업은 꽤 오린 기간이 걸리는 프로세스에요. 지금 있는 번역들도 펠로우쉽이나 Google Summer of Code 프로그램을 통한 기금으로 만들어졌습니다. 번역 프로젝트는 장기간에 걸쳐 진행되기 때문에 최대한 기여자분들께 기금을 지급하려 하고 있습니다.
       </p>
-    <p>
+    <p class="description">
       A: 번역 작업 뿐만 아니라 번역을 위한 프레임워크도 셋업해주셨죠. 예를 들어 용어 사전(glossary)과 같이 개별 언어를 넘어 보편적으로 사용할 수 있는 포맷을 제시해주셨죠. 여기에 더해 번역 작업 진행이 어느 정도인지 트랙할 수 있는 시스템을 고민 중이신 것도 언급해 주셨고, 기술 문서를 데이터에 입각해 렌더링하는 시스템을 새로 디자인하는 이야기도 해주셨습니다. 이는 모두 아직 진행 중인 프로젝트로 알고 있습니다.</p>
 
-    <p>
+    <p class="description">
       p5js에 새 프로젝트나 아이디어를 제안할 때, 여태까지 시도되지 않은 완전히 참신한 아이디어를 내어야 할까요? p5js 프로젝트가 협력적이고, 분산된 프로젝트이다보니 때때로 Github repo를 살펴 보는 것만으로 각 서브 프로젝트의 상세한 진행 상황을 그려보기 힘들 수 있습니다. 관계자들에게 연락을 해보고, 꼼꼼히 조사해야 현재 진행 상황에 대한 윤곽이 나올 때가 있어요.</p>
 
-    <p>
+    <p class="description">
       그럼, p5js에 새 아이디어를 어떤 식으로 제시하는게 가장 좋은 방법일까요?
       </p>
     <p>
@@ -100,7 +90,7 @@
   </section>
   <section>
     <h2 id="dev_translation_tools"> 번역을 위한 도구 만들기 </h2>
-    <p>
+    <p class="description">
       A: 세계화 프로젝트 이야기로 돌아가 볼까요. 프로젝트 초반에 특별히 논의된 이슈들이 있을까요? 어떤 식으로 논의가 전개되었나요?</p>
     <p>
       K: 세계화 프로젝트는 계속 변화하고, 계속 진화해가는 프로젝트에요. 지금 당장도 제 머릿 속에 새로운 생각들과 아이디어들이 있기도 하고요. 세계화 프로젝트의 시작은 제 펠로우쉽으로 시작되긴 했는데, 그때만해도 그냥 있는 글을 번역하는데 국한되지 않았어요. 그건 전체 프로젝트의 절반에 불구했죠. 나머지 절반은 번역 결과물을 어떻게 유지해야 지속 가능할까에 대한 고민이었네요.</p>
@@ -118,13 +108,13 @@
       결과적으로 Pontoon은 대부분 괜찮게 돌아가긴 했는데요, 사실 아직도 p5js에 구현하는건 주저하고 있어요. 왜냐면 Pontoon 인스턴스로 배포(deploy)하는게 엄청난 작업이거든요. 그리고 이 인스턴스 자체가 로컬 인스턴스 전체를 써서 무겁게 돌아가고, 데이터베이스를 새로 따로 셋업해야 하는 상황이되요. 그리고 무료 인스턴스로는 용량이 충분하지 않기 때문에 유료 인스턴스를 써야겠죠. 여러모로 이상적이지 않은 해결법이에요. 현재로는 상용 서비스들이 더 좋은 옵션이 될 수 있을지 한번 고려해보고 있는데요, 이런 상용 서비스들이 오픈 소스 프로젝트들에게는 무료로 서비스를 지원하는 경우가 있기 때문입니다.</p>
     <p>
       그래서 현재 게속 고민해보는 상태고요. 이런 의미로 번역 툴을 개발하는 프로젝트는 계속해서 바뀌고, 계속해서 진화하는 것이 되었다고 생각해요.</p>
-    <p>
+    <p class="description">
       A: Pontoon에 대해 더 설명해 주실 수 있을까요? 본래 어떤 맥락에서 개발된 툴인가요?</p>
     <p>
       K: Firefox로 유명한 Mozilla가 Pontoon 자신들의 세계화 혹은 지역화 니즈를 위해서 디자인하고 개발했어요. Firefox와 관련 프로덕트들의 모든 번역 프로세스들이 Pontoon을 통해서 제공되고 있죠. Pontoon전에는 Pootle이라는 Translate House가 개발한 또 다른 시스템이 있었는데요, 2000년대 초 혹은 90년대 말쯤 개발이 중단되었어요. 브라우져 기반 인터페이스로 번역을 관리하는 아이디어를 굉장히 초기에 제시한 프로젝트였는데, Pontoon이 여러모로 Pootle에서 아이디어를 얻어 만들어진 것 같아요.</p>
     <p>
       Pontoon를 적용하는데 한계가 느껴지는 이유 중 하나는, 본래는 UI (i.e., Firefox) 번역을 위해 만들어진 툴을, 우리는 기술문서에 적용해보려는 등, 더 범용적인 목적에 쓰려고하니 문제점이 계속 발생하는것 같아요. 일단 문서와 같은 긴 글을 번역하는 용도를 위해 디자인된 툴이 아니에요. 그리고 많은 수의 스트링(string)을 다루기 위해 디자인된 것도 아닌데, 라이브러리 프로젝트에서는 많은 수의 스트링들을 다룰 수 밖에 없습니다. Pontoon의 한계점이 이런 맥락에서 Pontoon의 한계점들이 보이는데, 처음부터 본래 용도 외 다른 용도를 고려해 디자인된게 아니니 이해는 가요. 어떤 부분은 쉽게 적용되겠지만 나머지 부분은, 우리 입장에선, 고생 좀 해야겠죠.</p>
-    <p>
+    <p class="description">
       A: Pontoon의 이런 한계가 사용성 (usability) 디자인 이슈에서 기인한 일까요 아니면 단순히 필요한 기술이 부재하는데서 오는 걸까요?</p>
     <p>
       K: 둘다라고 생각해요. 일단 확실히 UX 문제점들이 있어요, 예를 들어: 인터페이스가 상대적으로 짧은 길이의 텍스트만을 고려하고 있는 점. Pontoon은 영어 단어의 경우 최대 20 단어 정도만 받아줘요. 만약에 스트링 데이터가 그것보다 길어지면 인터페이스가 혼돈의 도가니가 되는데요, 스트링 데이터를 임의로 끊어버리고 일부만 보여주거나 억지로 한번에 보여주려고 하기 때문에 엉망진창이 됩니다.</p>
@@ -133,9 +123,29 @@
     <p></p>
     <p></p>
   </section>
+  <section>
+    <h2 id="i18n_issues">세계화 이슈들</h2>
+    <p class="description"></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p class="description"></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </section>
+  <section>
+    <h2 id="new_contributors">미래의 기여자분들을 초대하며</h2>
+    <p class="description"></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p class="description"></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </section>
 </article>
 <div>
-  <p class="breadcrumb"> <a href="../">Friendly Errors i18n Book</a> > interview </p>
+  <p class="breadcrumb"> <a href="../">Friendly Errors i18n Book</a> > {{chapter}} </p>
 </div>
-  </body>
-</html>
