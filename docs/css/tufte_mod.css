@@ -187,7 +187,7 @@ h2.main-link{
 }
 
 article {
-    padding: 5rem 0rem;
+    padding: 1rem 0rem;
 }
 
 section {
@@ -245,6 +245,23 @@ div.epigraph > blockquote > footer > cite {
 
 div.center {
     text-align: center;
+}
+
+div.top-menu {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+div.top-menu > p {
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    display: inline;
+  }
 }
 
 img.logo {
