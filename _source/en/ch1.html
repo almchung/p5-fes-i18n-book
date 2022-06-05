@@ -1,0 +1,69 @@
+---
+layout: layout
+title: 청자를 상정하기에 앞서
+chapter: chapter 1
+author: 전유진
+---
+<div>
+  <p class="breadcrumb"> <a href="../">Friendly Errors i18n Book</a> > {{chapter}} </p>
+</div>
+<article>
+  <div class="bubble-title">
+    <img src="../css/bubble-top.svg">
+    <h1>{{title}}</h1>
+    <img src="../css/bubble-bottom.svg">
+    <p class="subtitle">{{ author }}</p>
+  </div>
+  <img class="break">
+  <div class="toc">
+    <p class="toc_title">목차</p>
+      <ol class="toc_list">
+        <li><a href="#gaze">위계를 만드는 위험한 시선</a></li>
+        <li><a href="#unlimited_receiver">메시지의 청자를 제한하지 않기</a></li>
+        <li><a href="#precise_kindness">정확한 친절함에 도달하기 위한 고민</a></li>
+      </ol>
+  </div>
+
+  <img class="break" src="../css/friendly-bar2.svg">
+
+  <section>
+    <p>마케팅에서 타겟팅(targeting)이란 용어는 다양한 의미로 활용됩니다. 타겟팅은 시장에서 고객이 될 가능성이 높은 사람들을 파악하기 위해 그들이 어떤 이들인지 정의하는 작업입니다. 아울러 타겟팅은 메시지를 전달하는 효과적인 방법을 찾아가는 전략적 과정이기도 합니다. 즉 특정 상품 및 서비스를 이용하리라고 기대되는 고객들의 욕구와 필요를 분석하여, 제공하는 내용을 그에 맞게 디자인해나가는 일이 타겟팅이라고 할 수 있습니다.</p>
+    <p>FES의 목표는 더 친절하고, 더 효과적인 메시지를 수신자에게 제공하는 것입니다. 그 이름에 이미 전제되어 있듯 FES가 그 목표에 더 잘 부합하기 위해서는 이 메시지가 어디로 또는 누군가를 향해 있는지, 그 수신자에 대해 생각해보고 집중할 필요가 있습니다. 그리고 이것은 단순히 특정 대상으로 범위를 좁히거나, 그룹화하는 개념과는 조금 다른 의미라고 생각합니다. 오히려, 어떠한 대상을 특정하기 때문에 생겨날 수도 있는 맹점에 대해 섬세하게 고찰해 보는 일에 가까울 것입니다.</p>
+  </section>
+  <section>
+    <h2 id="gaze">위계를 만드는 위험한 시선</h2>
+    <p>
+      FES의 청자를 ‘초심자(beginner)’로 표현하는 문제를 먼저 고려해보면 좋겠습니다. GitHub 공식 문서<label for="sn-p5jsFESdoc" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-p5jsFESdoc" class="margin-toggle"/><span class="sidenote">🌸 p5.js Friendly Error System (FES) <a href="https://github.com/processing/p5.js/blob/main/contributor_docs/friendly_error_system.md"><em>README 파일</em></a></span>‘시작하는 프로그래머를 돕기 위한(aims to help new programmers)’이라고 FES의 목표를 선언하고 있고, 그것의 청자를 ‘-자(-er)’로 표현하는 것에 큰 문제가 없어 보이기도 합니다. 다만 이 과정에서 고려해야 할 것은 언어의 차이라기보다는 지식을 접하는 수용자, 즉 청자를 상정하는 방식입니다. FES가 친절함을 내세우고 있다고 해서 그것을 읽는 이들을 <strong><em>친절함이 필요한 이</em></strong>로 단순하게 치환할 때 나타날 수 있는 문제와, 또 그것을 다시 성급하게 ‘초심자(beginner)’로 좁힐 때 발생하는 누락과 한계를 고민해야 합니다.
+    </p>
+    <p>
+      청자를 초심자로 표현하는 방식은 다양한 논쟁을 낳습니다. 첫 번째는 ‘이 메시지를 읽는 당신은 초보’라는 전제 하에 일종의 카테고리를 만들고, ‘초보’라는 이름표를 붙이는 행위가 됩니다. 간혹 초심자라고 스스로를 인식하는 청자가 이 표현이 자신을 위한 것이라고 느끼며 의지하는 경우도 있을 수 있습니다. 하지만 초심자인지 아닌지를 판단하는 기술의 숙련도라는 것이 사실 얼마나 복잡하고 상대적인 개념인지 떠올려 봅시다. 만약 코드를 다뤄온 햇수만으로 기준을 삼아 초급, 중급, 고급을 나눈다고 생각했을 때, 그 방식에 쉽게 동의할 수 있나요?
+    </p>
+    <p>
+      기술의 숙련도는 단순하게 단계로 나누기 어려울 뿐만 아니라, 한 사람 내부에서도 그가 처한 상황에 따라 바뀔 수 있는 가변적인 개념입니다. 예를 들어, 숙달된 프로그래머라 할지라도 늘 다루던 익숙한 코드가 아닌 처음 보는 에러 메시지와 만날 수도 있습니다. 우리들은 학교, 서적, 플랫폼, 커뮤니티 등 여러 기술의 장에서 편의상 그 기술의 숙련도를 ‘급(level)’으로 구분하는, 소위 위계화에 익숙해져 있습니다. 하지만 실제로 프로그래밍을 수행하는 과정에서 그러한 구분이 얼마나 유효한가요? 기술 영역에서 습관처럼 위계를 나누는 문화가 필요한 이유가 무엇인가요? 그를 통해 얻는 것은 무엇이며, 반대로 그로 인해 놓치고 있는 것은 없을까요?
+    </p>
+  <section>
+    <h2 id="unlimited_receiver">메시지의 청자를 제한하지 않기</h2>
+    <p>
+      마이크로 소프트사에서 발표했던 포용적인 디자인을 위한 툴킷 문서<label for="sn-msinclusivedesign" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-msinclusivedesign" class="margin-toggle"/><span class="sidenote">Inclusive Microsoft Design: <a href="https://www.microsoft.com/design/inclusive/"><em>Inclusive 101</em></a></span>에서는 장애(disability)를 한 사람의 신체적 상태를 일컫는 것에서 사회와 그 개인 사이에 발현되는 상호적인 불화(mismatch)의 개념으로 확장시켜야 한다고 주장합니다. 이들은 장애를 개인의 문제로 보기보다는  장애를 구분짓고 배제하는 사회의 문제라고 관점을 달리할  것을 제안합니다. 나아가 사회가 장애를 어떻게 정의하고 다루는지, 그리하여 이와 관련된 이데올로기나 선입견들을 어떻게 구성하고 공고히 하는지를 모두 ‘장애’라는 개념에 포괄합니다. 또한 ‘장애’와 ‘배제’가 일시적이고 가변적인 ‘경험’이 될 수 있다고 언급하면서, 누구든 마주할 수 있는 ‘상황’이라는 것을 강조하고 있지요.  FES를 필요로 하는 대상도 그와 마찬가지입니다. 누구나 FES가 필요한 상황에 놓일 수 있고, ‘초심자’라는 구분이 그러한 의미에서는 오히려 불필요하고 불편해지는 것입니다.
+    </p>
+    <p>
+      결국 초심자로 표현하는 것은 FES의 청자를 제한하는 결과를 낳을 수 있습니다. FES의 청자를 초심자라는 범주에 가두기보다는, 오랜 프로그래밍 경력을 가진 이도 때때로 FES가 필요한 경우가 있다고 열어두면 어떨까요? 특히 FES의 Friendly라는 표현이 다시 ‘Friendly가 필요한 사람 vs Friendly가 필요하지 않은 사람’을 나누는 기준이 되어서는 안됩니다. 위계나 구분이 전제되지 않고서도, 친절함은 필요하고, 또 존재할 수 있습니다.
+    </p>
+    <p>
+      청자가 ‘어떤 사람'이라고 함부로 규정짓지 않는 것은 에러메시지를 전달하는 태도와도 연결하여 생각해볼 수 있습니다. 에러메시지를 전달할 때, 사용자를 나무라거나 비난하는 것을 경계하라는 가이드라인이 몇몇 기업의 UX 가이드라인<label for="sn-ux_guideline" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-ux_guideline" class="margin-toggle"/><span class="sidenote">사용자에게 책임을 전가하거나 사용자를 비방하는 것을 주의하라는 내용이 담긴 가이드라인으로는 다음과 같은 대표적인 기업들의 것을 들 수 있습니다: <br><br>(1) <a href="https://developer.apple.com/design/human-interface-guidelines/macos/windows-and-views/alerts">애플 휴먼 인터페이스 가이드라인 >> Alerts </a>>> “Avoid sounding accusatory, judgmental, or insulting.” <br>
+(2) <a href="https://docs.microsoft.com/en-us/windows/win32/debug/error-message-guidelines">MS Windows 앱 개발 >> Error Message Guidelines</a> >> “Do not make the user feel at fault even if the problem is the result of a user error.” </span>에서도 언급되고 있습니다. 문제가 되는 태도는 친절이라는 목표에 부합하지 않을 뿐만 아니라, 가이드라인의 생산자가 청자를 어떻게 위치시키고 있는가를 드러내기도 합니다. 세련된 타겟팅은 그 전략을 드러내지 않고도 성공한다는 것을 떠올려봅시다. 그리고 실제로 대다수 청자의 잘못으로 발생하는 오류라고 할지라도 에러와 청자의 잘못, 두 가지의 인과성을 함부로 단정할 수 없기도 합니다. 결국 어떤 전제를 내리거나 무언가를 상정하는 행위는 편견에 휘둘리거나 기존의 편향성을 강화하는 방향으로 쉽게 이어질 수 있다는 점을 주의해야 합니다. 그런 의미에서 청자의 범위를 고려할 때 불필요한 선을 긋고 있는 것은 아닌지, 함부로 누군가를 특정한 의미 안에 가두고 있는 것은 아닌지를 살펴봐야 합니다.
+    </p>
+  </section>
+  <section>
+    <h2 id="precise_kindness">정확한 친절함에 도달하기 위한 고민</h2>
+    <p>
+      FES가 이미 친절함이라는 표현을 그 이름에 달고 존재를 선언하면서부터 어쩌면 운명적으로 마주할 수밖에 없는 어려움이 있을 것입니다. 일상 생활에서도 친절함의 정도와 방식을 받아들이는 사람에 따라, 그 친절함이 제공되는 상황에 따라 모두 다르게 인식하니까요. 이는 동시에 언어의 효율성과 윤리적 가치가 상충하는 문제로도 생각해볼 수 있습니다. 위에 든예시에서도 특정 인물(-자, -er)로 표현하는 것이 언어적으로는 간편하고 쉬운 전달일 수 있지만, 이와 같은 편의성으로 인해 어떤 개념이 지나치게 단순화되거나 불필요한 무언가를 낳을 수 있다는 사실을 염두해야 합니다.
+    </p>
+    <p>
+      번역 과정에서 우리는 분명히 그 청자에 집중해야 하지만, 그 이유로 그들을 어떤 정의에 손쉽게 가두거나 꼬리표를 붙이지는(labeling) 말아야 할 것입니다. FES의 타겟팅 방식 또한 역시 ‘친절함'이라는 본원적 목표에 부합해야 하며, 대상화(objectifying)나 타자화(otherizing)가 되지 않도록 주의해야 합니다. 어쩌면 FES의 번역에서 우선적으로 집중해야 하는 것은 그 청자가 누구인가-를 상정하는 일보다는, 무엇이 친절함인가-를 고민하는 쪽이 아닐까요.<label for="sn-kind_discussion" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-kind_discussion" class="margin-toggle"/><span class="sidenote">그리고 이 고민은 <em>[<a href="../ch0#incompleteness">0:Friendly? 🤔 Friendly의 틈새들</a>]</em> 섹션에서 한층 더 짙어지고, <em>[<a href="../ch2#care_respect_openmind">2:존중과 배려, 그리고 열린 마음</a>]</em> 섹션에서 -우리는 왜 친절해야 하는가- 라는 논의로 확장됩니다. </span> 결국 코드를 처음 접하는 이들부터 코드에 익숙한 이들까지, 에러메시지를 맞닥뜨린 상황에 놓인 모든 이들을 고려하면서 정말로 도움이 되는 친절함이란 무엇인지 찾아가는 과정이 바로 FES 번역의 핵심이 아닐까 합니다.
+    </p>
+  </section>
+</article>
+<div>
+  <p class="breadcrumb"> <a href="../">Friendly Errors i18n Book</a> > {{chapter}} </p>
+</div>
