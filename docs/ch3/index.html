@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;500;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans:400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;400;&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
     <title>기술 용어 다루기</title>
   </head>
@@ -24,9 +24,15 @@
 </div>
 <article>
   <div class="bubble-title">
-    <img src="../css/bubble-top.svg">
+    <picture>
+      <source srcset="../css/bubble-top-dark.svg" media="(prefers-color-scheme: dark)">
+      <img src="../css/bubble-top.svg">
+    </picture>
     <h1>기술 용어 다루기</h1>
-    <img src="../css/bubble-bottom.svg">
+    <picture>
+      <source srcset="../css/bubble-bottom-dark.svg" media="(prefers-color-scheme: dark)">
+      <img src="../css/bubble-bottom.svg">
+    </picture>
     <p class="subtitle">전유진</p>
   </div>
   <img class="break">
@@ -39,7 +45,12 @@
       </ol>
   </div>
 
-  <img class="break" src="../css/friendly-bar2.svg">
+  <section>
+    <picture>
+      <source srcset="../css/friendly-bar2-dark.svg" media="(prefers-color-scheme: dark)">
+      <img class="break" src="../css/friendly-bar2.svg">
+    </picture>
+  </section>
 
   <section>
     <p>기술 용어를 번역하기 전 선행되어야 하는 중요한 과정이 있습니다. 바로 외래어인 용어를 음차로 표기할지, 자국어로 뜻을 번역할지 판단하는 것이죠. 번역자는 두 갈래 선택의 기로에서 쉽지 않은 결정을 내려야 합니다. 이 어려움을 단순화하고, 전체적인 통일감을 우선해 둘 중 하나로 규칙을 정해볼 수도 있겠지요. 하지만 본 가이드라인에서는 성급히 둘 중 하나로 규칙을 정하기보다는, 음차 표기와 자국어 번역이 각각 필요한 상황에 관해 언급하고자 합니다. </p>
