@@ -152,14 +152,6 @@ p.subtitle {
     line-height: 1;
 }
 
-p.breadcrumb {
-    font-family: 'Gothic A1', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    margin: 0;
-    font-size: 1rem;
-}
-
 .author {
     margin-left: 1.2em;
     margin-bottom: 0.5em;
@@ -208,7 +200,7 @@ h2.main-link{
 }
 
 article {
-    padding: 4rem 0rem;
+    padding-top: calc(0.5rem + 6vmin);
 }
 
 section {
@@ -268,20 +260,39 @@ div.center {
     text-align: center;
 }
 
-div.top-menu {
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
+div.topbar{
+    display: flex;
+}
+
+div.breadcrumb {
+    flex: 70%;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+div.breadcrumb > p {
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    display: inline;
+}
+
+div.topleft-menu {
+    flex: 30%;
     text-align: right;
 }
 
-div.top-menu > p {
+div.topleft-menu > p {
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
     margin-right: 2rem;
     display: inline;
+    white-space: nowrap;
+    line-height: normal;
   }
 }
 
@@ -558,9 +569,9 @@ label.margin-toggle:not(.sidenote-number) {
 
 @media (max-width: 760px) {
     body {
-        width: 84%;
+        width: 90%;
         padding-left: 8%;
-        padding-right: 8%;
+        padding-right: 2%;
     }
 
     hr,
@@ -633,4 +644,38 @@ label.margin-toggle:not(.sidenote-number) {
     img {
         width: 100%;
     }
+
+    div.topbar{
+        display: block;
+    }
+
+    div.breadcrumb {
+        margin-left: auto;
+        margin-right: 1rem;
+        text-align: right;
+    }
+
+    div.breadcrumb > p {
+        font-family: 'Gothic A1', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        display: inline;
+    }
+
+    div.topleft-menu {
+        flex: 30%;
+        text-align: right;
+    }
+
+    div.topleft-menu > p {
+        font-family: 'Gothic A1', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-right: 1rem;
+        display: inline;
+        white-space: nowrap;
+        line-height: normal;
+      }
 }

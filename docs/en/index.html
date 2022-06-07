@@ -11,16 +11,17 @@
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;400;&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-    <title>Friendly Errors i18n Guidebook ✎</title>
+    <title>Friendly Errors i18n Book ✎</title>
   </head>
   <body>
-    <div class="top-menu">
-      <p> <a href="https://almchung.github.io/p5-fes-i18n-book/">한국어</a> </p>
-      <p> <a href="https://almchung.github.io/p5-fes-i18n-book/en/">ENGLISH</a> </p>
-      <p> <a href="https://almchung.github.io/p5-fes-i18n-book/about/">the team</a> </p>
-    </div>
-    <article>
-  <h1>Friendly Errors i18n Guidebook ✎</h1>
+    <div class="topbar">
+  <div class="topleft-menu">
+    <p> <a href="../">한국어</a> </p>
+    <p> <a href="../about/">the team</a> </p>
+  </div>
+</div>
+<article>
+  <h1>Friendly Errors i18n Book ✎</h1>
     <div class="book">
       <p>
         Friendly Errors i18n Book project is a part of the internationalization effort on the p5.js, Friendly Errors System (FES). We welcome anyone who wants to contribute a translation or improve the experience of FES. We also want to invite people interested in accessibility and software internationalization issues in general.</p>
@@ -30,84 +31,84 @@
         The following six "guides" and an interview do not try to propose a unified standard for the internationalization process. Instead, each would be an example of how one from a non-English culture would approach the internationalization of accessible design and community-based software — From people who would welcome, learn, follow, extend, fear, adopt, doubt, hack, reframe, critique, and cherish open-source software. Our effort came nowhere close to fully representing the whole, diverse experience of non-English culture. Still, we wished to capture our own experience and create a starting ground.</p>
     </div>
     <div class="book">
-      <h2 class="main-link">0. <a href="./ch0">Friendly Errors를 번역하시려는 분들께,</a><span class="author"> 염인화 </span></h2>
+      <h2 class="main-link">0. <a href="./ch0">Dear contributor who wants to translate Friendly Errors,</a><span class="author"> Inhwa Yeom </span></h2>
       <p class="description">
-         "Friendly"라는 표현이 지금 막 번역을 시작하시려는 여러분에게 어떤 의미로 다가오나요? 사용자 친화적 디자인의 핵심 덕목인 “친절”은 사회 관계적 맥락 그리고 개별 상황에 따라 다양한 형태로 구현될 수 있습니다.
+         What does the expression "Friendly" mean to those who are just starting to translate? “Friendliness,” a core virtue of user-friendly design, can be implemented in various forms depending on social and relational contexts and individual circumstances.
       </p>
       <ul>
-        <li><a href="./ch0#incompleteness">Friendly? 🤔 Friendly의 틈새들</a></li>
-        <li><a href="./ch0#kind_translation">어떤 번역문이 ‘친절한’ 결과물일까요?</a></li>
-        <li><a href="./ch0#friendly_for_who">어떤 사용자들을 위해 friendly 에러 메시지를 번역하고 싶나요?</a></li>
+        <li><a href="./ch0#incompleteness">Friendly? 🤔 A hole in "friendliness"</a></li>
+        <li><a href="./ch0#kind_translation">What makes a translated message truly kind?</a></li>
+        <li><a href="./ch0#friendly_for_who">Who do you want to translate friendly errors for?</a></li>
       </ul>
 
-    <h2 class="main-link">1. <a href="./ch1">청자를 상정하기에 앞서</a> <span class="author"> 전유진 </span></h2>
+    <h2 class="main-link">1. <a href="./ch1">Before You Define Your Audience</a> <span class="author"> Youjin Jeon </span></h2>
     <p class="description">
-        "Friendly"가 필요한 대상을 오직 초심자로만 한정할 때에는 어떤 문제가 발생할까요? 청자가 어떤 사람이라고 미리 한계를 그어두지 않는 태도가 지식에 대한 소외, 즉 대상화나 타자화를 방지할 수 있습니다.
+        What's the problem with simplifying the recipient of Friendly Errors to "beginners"? We need to cultivate a caring attitude that will reduce the possible chance of alienating, objectifying, or otherizing people who would benefit from the Friendly Errors system.
     </p>
     <ul>
-      <li><a href="./ch1#gaze">위계를 만드는 위험한 시선</a></li>
-      <li><a href="./ch1#unlimited_receiver">메시지의 청자를 제한하지 않기</a></li>
-      <li><a href="./ch1#precise_kindness">정확한 친절함에 도달하기 위한 고민</a></li>
+      <li><a href="./ch1#gaze">A dangerous gaze that creates a hierarchy</a></li>
+      <li><a href="./ch1#unlimited_receiver">Don't limit your audience of the message</a></li>
+      <li><a href="./ch1#precise_kindness">Accuracy and precision of kindess</a></li>
     </ul>
 
-    <h2 class="main-link">2. <a href="./ch2">우리를 닮은, 기계 페르소나?</a> <span class="author"> 정앎 </span></h2>
+    <h2 class="main-link">2. <a href="./ch2">echo of ideal, voice of machine?</a> <span class="author"> alm chung </span></h2>
       <p class="description">
-        단체의 일원이 소속 단체 이념을 비추어 행동하듯, 소프트웨어의 페르소나 또한 만드는 사람들의 지향점과 철학을 담아 빗어낼 수 있을까요?
+        Just as members of an organization act in the light of their organization's ideology, can the persona of software also reflect the direction and philosophy of those who make it?
       </p>
     <ul>
-      <li><a href="./ch2#consistency">일관된 페르소나를 지니는 에러 메시지</a></li>
-      <li><a href="./ch2#code_of_conduct">행동강령을 따르는 기계 페르소나</a></li>
-      <li><a href="./ch2#care_respect_openmind">존중과 배려, 그리고 열린 마음</a></li>
+      <li><a href="./ch2#consistency">error messages that are told by a consistent persona</a></li>
+      <li><a href="./ch2#code_of_conduct">machine persona that is following the code of conduct</a></li>
+      <li><a href="./ch2#care_respect_openmind">care, respect, and an open mind</a></li>
     </ul>
 
-    <h2 class="main-link">3. <a href="./ch3">기술 용어 다루기</a><span class="author"> 전유진 </span></h2>
+    <h2 class="main-link">3. <a href="./ch3">Translating Technical Terms</a><span class="author"> Youjin Jeon </span></h2>
     <p class="description">
-        기술 용어를 우리말로 옮길 때 택할 수 있는 두 가지 방향을 고려해보고, 관련 이슈를 점검해봅니다.
+        We will cover two possible ways of translating technical terms into Korean and examine related issues.
     </p>
     <ul>
-      <li><a href="./ch3#phonetic_translation">음차 표기-정확한 이해를 돕는 도구</a></li>
-      <li><a href="./ch3#semantic_translation">자국어 번역-언어라는 장벽을 낮추는 수단</a></li>
-      <li><a href="./ch3#nominalization">명사화 현상과 일관성을 의식하기</a></li>
+      <li><a href="./ch3#phonetic_translation">Phonetic translation-a way to refer to accurate information</a></li>
+      <li><a href="./ch3#semantic_translation">Semantic translation-a way to lower the language barrier</a></li>
+      <li><a href="./ch3#nominalization">Be aware of nominalization issues and keep consistency</a></li>
     </ul>
 
-    <h2 class="main-link">4. <a href="./ch4">번역가 간의 약속</a><span class="author"> 염인화 & 편집자 이지현 </span></h2>
+    <h2 class="main-link">4. <a href="./ch4">Pledge among translators</a><span class="author"> Inhwa Yeom & editor Jihyun Lee </span></h2>
     <p class="description">
-        영어와 한국어 간에는 뚜렷한 문법적 차이가 존재합니다. 번역을 하면서 흔히 범하기 쉬운 영한번역 오류사례를 정리해봤습니다.
+        There are distinct grammatical differences between English and Korean. We have summarized examples of common English-to-Korean translation errors that are often made.
     </p>
     <ul>
-      <li><a href="./ch4#tools">번역에 도움이 되는 툴과 유의점들</a></li>
-      <li><a href="./ch4#dilemmas">번역 작업 중 마주치는 딜레마들</a></li>
+      <li><a href="./ch4#tools">Helpful tools for translation (with some grain of salt)</a></li>
+      <li><a href="./ch4#dilemmas">Dilemmas encountered during translation</a></li>
         <ul>
-          <li><a href="./ch4#sentence_ending">어미에 따라 달라지는 말의 느낌</a></li>
-          <li><a href="./ch4#word_origin">문장 내 어휘의 결을 통일하기 (고유어, 한자어, 외래어)</a></li>
-          <li><a href="./ch4#cultural_translation">원문을 살리면서도 어색함을 줄이기</a></li>
-          <li><a href="./ch4#postposition">앞에 오는 명사에 따라 바뀌는 조사</a></li>
+          <li><a href="./ch4#sentence_ending">Deciding sentence ending, which determines the overall tone</a></li>
+          <li><a href="./ch4#word_origin">Unifying the origin of words in a sentence (native word, Sino-Korean word, loanword)</a></li>
+          <li><a href="./ch4#cultural_translation">Minimizing "awkward" expressions while best preserving the original meaning</a></li>
+          <li><a href="./ch4#postposition">Finding correct postposition</a></li>
         </ul>
-      <li><a href="./ch4#glossary">기술 용어 색인</a></li>
-      <li><a href="./ch4#intervention">번역자의 반짝이는 개입</a></li>
+      <li><a href="./ch4#glossary">Glossary</a></li>
+      <li><a href="./ch4#intervention">Translator's ✨ Intervention</a></li>
     </ul>
 
-    <h2 class="main-link">5. <a href="./ch5">기계번역/ 사이에 놓인.</a> <span class="author"> 정앎 </span></h2>
+    <h2 class="main-link">5. <a href="./ch5">machine translation/ swarming in between.</a> <span class="author"> alm chung </span></h2>
       <p class="description">
-        번역이 서로 다른 두 언어집단을 이어준다면, 에러 메시지 또한 기계와 인간을 이어주는 번역물이라고 볼 수 있을까요? 에러 메시지 번역작업이 무엇들을 연결할 수 있을지 생각해봅니다.
+        If translation connects two different cultures divided by language barrier, can error messages also be translations that connect machines and humans? We will consider where the error messages reside and what error message translation might connect.
       </p>
     <ul>
-      <li><a href="./ch5#in_between">사이에 놓인 메시지</a></li>
-      <li><a href="./ch5#generatable">기계가 만들 수 있는 메시지</a></li>
-      <li><a href="./ch5#searchable">검색가능한 메시지</a></li>
-      <li><a href="./ch5#symbiosis">번역툴과 공생하는 메시지</a></li>
-      <li><a href="./ch5#new_opportunity">새로운 협업 기회를 위한 번역</a></li>
+      <li><a href="./ch5#in_between">error messages, in between</a></li>
+      <li><a href="./ch5#generatable">generatable messages</a></li>
+      <li><a href="./ch5#searchable">searchable messages</a></li>
+      <li><a href="./ch5#symbiosis">messages in symbiosis with available resources</a></li>
+      <li><a href="./ch5#new_opportunity">i18n as a way to create a new opportunity for collaboration</a></li>
     </ul>
 
-    <h2 class="main-link">+ <a href="./kenneth_lim">인터뷰: 오픈 소스 소프트웨어 번역 과정에서 따르는 과제들</a> <span class="author"> Kenneth Lim </span></h2>
+    <h2 class="main-link">+ <a href="./kenneth_lim">Challenges in Open Source Software Translation</a> <span class="author"> Kenneth Lim </span></h2>
       <p class="description">
-        p5js 코어 라이브러리 및 웹사이트 담당자 (steward)로 활발히 활동하고 계시는 <a href="https://limzykenneth.com">Kenneth Lim</a>님과 지난 12월 인터뷰를 진행 했습니다. p5js 웹사이트 및 기술문서 번역 작업이 어떻게 시작되었는지, 그리고 오픈소스 소프트웨어를 번역하고 유지하는데서 겪는 특별한 고민들에 대해 이야기 들어봤습니다.</p>
+        An interview with <a href="https://limzykenneth.com">Kenneth Lim</a>, who is the steward of p5js core library and website. We talked about how the translation project of the p5js website and technical documentation started, and the particular concerns in translating and maintaining open source software.</p>
       <ul>
-        <li><a href="./kenneth_lim#starting_contribution">오픈소스 소프트웨어 기여의 시작</a></li>
-        <li><a href="./kenneth_lim#own_tools">우리에게 맞는 번역 도구</a></li>
-        <li><a href="./kenneth_lim#contributors_ux">오픈소스 기여자 경험의 질</a></li>
-        <li><a href="./kenneth_lim#between_languages">언어를 옮기며 마주친 고민들</a></li>
-        <li><a href="./kenneth_lim#new_contributions">새로운 만남들을 기다리며</a></li>
+        <li><a href="./kenneth_lim#starting_contribution">How did I begin contributing open-source software?</a></li>
+        <li><a href="./kenneth_lim#own_tools">Our own translation tools</a></li>
+        <li><a href="./kenneth_lim#contributors_ux">Contributors UX</a></li>
+        <li><a href="./kenneth_lim#between_languages">Problems encountered between languages</a></li>
+        <li><a href="./kenneth_lim#new_contributions">Welcoming new contributions</a></li>
       </ul>
   </div>
 </article>
