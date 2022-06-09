@@ -85,9 +85,11 @@ h1 {
 }
 
 div.bubble-title{
-  width: 80%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 300px;
-  display: inline-block;
+  display: block;
 }
 
 div.bubble-title > h1 {
@@ -435,7 +437,7 @@ img {
 .marginnote {
     float: right;
     clear: right;
-    margin-right: -60%;
+    margin-right: -70%;
     width: 50%;
     margin-top: 0.3rem;
     margin-bottom: 1.2rem;
@@ -570,8 +572,8 @@ label.margin-toggle:not(.sidenote-number) {
 @media (max-width: 760px) {
     body {
         width: 90%;
-        padding-left: 8%;
-        padding-right: 2%;
+        padding-left: 6%;
+        padding-right: 4%;
     }
 
     hr,
