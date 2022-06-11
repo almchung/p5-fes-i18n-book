@@ -40,11 +40,11 @@
   <div class="toc">
     <p class="toc_title">Table of Contents</p>
       <ol class="toc_list">
-        <li><a href="#starting_contribution">How did I begin contributing open-source software?</a></li>
-        <li><a href="#own_tools">Our own translation tools</a></li>
-        <li><a href="#contributors_ux">Contributors UX</a></li>
-        <li><a href="#between_languages">Problems encountered between languages</a></li>
-        <li><a href="#new_contributions">Welcoming new contributions</a></li>
+        <li><a href="#starting_contribution">Beginning of the p5js Website Translation Project</a></li>
+        <li><a href="#own_tools">“Our” Translation Tools</a></li>
+        <li><a href="#contributors_ux">Contributors and Maintainers Experience</a></li>
+        <li><a href="#between_languages">Between Languages</a></li>
+        <li><a href="#new_contributions">Invitation to Future Contributors</a></li>
       </ol>
   </div>
 
@@ -57,220 +57,213 @@
 
   <section>
     <p>
-      An interview with <a href="https://limzykenneth.com">Kenneth Lim</a>, who is the steward of p5js core library and website. We talked about how the translation project of the p5js website and technical documentation started, and the particular concerns in translating and maintaining open source software.
+      Here we present an interview with <a href="https://limzykenneth.com">Kenneth Lim</a>, the steward of the p5js core library and website. Kenneth shared how the translation project of the p5js website and technical documentation started and his experience in translating and maintaining open-source software.
     </p>
   </section>
 
   <section>
-    <h2 id="starting_contribution">오픈소스 소프트웨어 기여의 시작</h2>
+    <h2 id="starting_contribution">Beginning of the p5js Website Translation Project</h2>
     <p class="description">
-      A (Alm Chung): p5.js를 맨 처음 어떻게 만나셨고, 오픈 소스 소프트웨어에 언제부터 기여하기 시작했나요?</p>
+      A (Alm Chung): How did you meet the p5.js project, and how did you get involved in the open-source project?</p>
     <p>
-      K (Kenneth Lim): 제가 p5.js를 만나게 된 것은, 다른 분들의 경우랑 크게 다를 것 없었다고 생각해요. 대학교에서 접하게 된 프로세싱(Processing)을 통해 인연이 시작되었죠. 예전에도 조금씩 코딩을 해보긴했지만, 프로세싱은 처음 시작해보는 것이었고 엄청 진지하게 뭘 한다거나 그런 건 아니었어요. p5.js는 2015년도나 2016년도 쯤에 접했던 것 같네요. 첫 느낌은 프로세싱이랑 같았는데, 제가 더 자주쓰던 자바스크립트(Javascript) 언어로 되어있어서 바로 쓰기 시작했어요.</p>
+      K (Kenneth Lim): How I get involved with p5 is similar to many other people, through Processing which I was introduced to in university. I did coding before, but I was just starting with Processing, nothing super serious. I came across p5 either in late 2015 or 2016. It basically felt like Processing, but in Javascript, which is a language I was more familiar with, so right away I started using it.</p>
     <p>
-      p5.js 프로젝트에 참여하기 시작한 것은 기술 문서 (documentation)를 통해서였어요. 지금도 이렇게 문서 개선을 통해 참여해보는 것을 다른 사람들에게도 많이 권하고 있고요. 문서를 읽다가 오타나 사소한 문제들이 보이면, 이걸 어떻게 고칠 수 있을까? 생각해보는 거죠.
+      I got involved with the p5.js project by going through the documentation, which I encourage many people to do. I saw typos and minor mistakes in the documentation and thought, how can I fix it?
       </p>
     <p>
-      거기에서 시작해서, 천천히 더 스케일 크고 기술적인 작업들로 옮겨갔어요. 한번은, 스마트폰 센서 데이터(예: 가속도계(accelerometer) 데이터)를 다루는 부분을 개선하는 프로젝트를 맡은 적이 있어요. 이미 있던 코드가 제대로 작동하고 있지 않았죠. 이 프로젝트를 하게 된 계기가, 제 개인작업에서 비슷한 API를 썼던 경험이 있어서 기여를 해볼 수 있지 않을까 생각했어요. 그래서 이 프로젝트를 진행하다가, 여러 우연이 겹쳐서 여기까지 오게 되었네요.
-      </p>
-    <p class="description">
-      A: 그럼 p5js에 참여하시게 된 계기가 개인 작업에서 출발한 것이었군요. 자신의 작업에서 라이브러리를 쓰다보면 자연스럽게 버그를 찾기도 하고, 개선점들이 떠오르기도 하고 그렇죠. 그러다가 직접 개선 작업에 손을 대게 되고요.
-      </p>
-    <p>
-      K: 네, 많은 기여자 분이 그런 식으로 시작하시는 것 같아요. 게다가 제가 기여를 하려고 했던 부분이 제가 전문적으로 이미 잘 파악하고 있는 내용인 것도 아니었어요. 오히려 코드의 문제점들을 대략 인지하고 있지만, 실제로 개선 작업을 하기전에 공식 MDN (Mozilla Developer Network) 웹 기술 문서들을 공부하거나 API가 실제로 어떻게 작동하나 시간을 써서 탐구해봐야하는 케이스에 가까웠죠. 저는 p5js 프로젝트가, 누군가가 이미 준비된 전문가가 아니어도 기여를 할 수 있다는 점이 너무 좋다고 생각해요. 그저 자신이 선택한 지점에 시간을 쓰면 되는 거죠. 저희가 빨리 진행하라고 닥달하지도 않고요. “어 아직 안 끝났어?” 이런 말도 절대 안하고요! 그저 자기 속도에 맞춰 배우고, 고칠 것을 고치면 되죠. 기여의 과정에서 가장 중요한 것도 배움이고요.
+      Gradually I moved on to larger, more technical contributions. At one point, I contributed the fixes on smartphone sensor data (for example, accelerometer data) where the existing implementation wasn’t quite working well. [The inspiration] came from my project using a similar API, and I felt I could fix this. So I worked on the fixes, and one thing led to the other I got to where I’m now.
       </p>
     <p class="description">
-      A: 센서 데이터 프로젝트 다음으로 진행하신 큰 프로젝트는 p5js 공식 문서 웹사이트를 번역하시는 거였죠? 왜 다음으로 이 프로젝트를 작업하시기로 결정하셨었나요?
+      A: It sounds like your involvement grew out of your personal projects using p5.js. Finding bugs or features you wanted to improve was natural, and then you jumped in.</p>
+    <p>
+      K: Yeah, a lot of it is like that. It was not the case where I already knew very well about the topic or issue I wanted to work on. It was more like the case where I knew a bit about the issue and got a sense of it, but I still needed to spend the time on resources such as the official MDN documentation and others to see how the API actually works before I tried things out.</p>
+    <p>
+      I think the p5 project is great in the sense that you don’t have to be the expert in any particular part to start contributing. You can just spend the time fixing issues of your choice. We’re not going to rush you. We’re not going to say, “oh are you done yet?”</p>
+    <p>
+      You can take your time to learn and fix things. That’s one of the most important parts of the contribution process.</p>
+    <p class="description">
+      A: Your next big contribution was translating the p5js website. Would you share how the project began?
       </p>
     <p>
-      K: 프로세싱 재단 펠로우쉽(Processing Foundation Fellowships)을 알게된게 2016년도 쯤이었네요. 이때 스페인어 번역은 이미 완성되어 있어서 웹사이트는 스페인어를 제공하고 있었어요. 거기에서 아이디어를 얻었어요. 제가 영어와 중국어를 할수있으니까, 펠로우쉽 오픈콜에 번역 프로젝트로 지원하면 되겠다고 생각했죠. 그래서 지원을 하긴 했는데, 사실 처음에 제 프로포절은 탈락했었어요. 재단에서 이 프로젝트에 알맞는 멘토를 찾지 못한 이유였죠.
+      K: I first came across the Processing Foundation Fellowships around mid-2016. By that point, the Spanish translation had already finished, so the website was already in Spanish. That gave me the idea. Since I’m fluent in English and Chinese, I can apply to the fellowship open call with a translation project. So I put in the application, but the thing is, my proposal was not accepted immediately because the foundation didn’t have the right mentor for the project at the time.
       </p>
     <p>
-      이런 사정으로 번역 프로젝트는 한 일년쯤 멈춰있었고, 결국 2018년도에 시작된거에요. 번역 프로젝트는 좋은 아이디어였지만, 다음 해에 한번 더 지원 과정을 거쳐야 했어요. 마침 지원을 한 그 때 Lauren이 대학에서 연구기금 공모전에 지원을 준비하고 있었는데, 제 프로포절이 공모전에 딱 잘 맞았어요. 그래서 Lauren이 제 프로포절로 연구기금 공모전을 내봐도 좋겠냐고 물어왔고, 저는 흔쾌히 승락했죠. 이 프로포절로 저희는 기금을 받았고, 멘토 Xin도 찾았어요. 이 모든게 2018년도 한 해 안에 일어났죠. 어떻게 다 셋업하고 진행할 수 있었네요.
+      The project was put on hold for about a year. And that’s why the translation project started in 2018 instead. I felt good about the translation project but had to submit another application for the following year. At the same time, Lauren was applying for a grant from UCLA for East Asian technology research, which fitted well with my original proposal. So she asked me can she take my proposal and submit it as a part of the grant application, and I said sure, go ahead. We got the funding, and we found a mentor, Xin. The whole process happened in 2018, and we managed to get the entire thing set up and running.
       </p>
     <p class="description">
-      A: 이 경험을 상세하게 들려주셔서 감사합니다. 공모전에서 지원하는 많은 분들은 선정 과정이 순차적으로 딱딱 진행해서 잘려나가는 것이라고 생각하기 쉽거든요.
+      A: Thank you for sharing details of the open call process because many people outside of it would assume it is a rigid, linear, and hard-cut process.
       </p>
     <p>
-      K: 저희 repo에 pull을 하시려는 분들, 특히 기술 문서 번역을 pull 하시려는 분들께 가끔 설명해드리려 하곤 해요. 전체 기술 문서 번역 작업은 꽤 오린 기간이 걸리는 프로세스에요. 지금 있는 번역들도 펠로우쉽이나 Google Summer of Code 프로그램을 통한 기금으로 만들어졌습니다. 번역 프로젝트는 장기간에 걸쳐 진행되기 때문에 최대한 기여자분들께 기금을 지급하려 하고 있습니다.
+      K: Sometimes, I would try to clarify for people looking to do a translation pull for p5.js, especially the documentation translation. The whole documentation translation project is a pretty lengthy process. The existing translations that we have now are either funded by fellowships or Google Summer of Code. The translation project is time-consuming, and we would want to pay people whenever we can.
       </p>
     <p class="description">
-      A: 번역 작업 뿐만 아니라 번역을 위한 프레임워크도 셋업해주셨죠. 예를 들어 용어 사전(glossary)과 같이 개별 언어를 넘어 보편적으로 사용할 수 있는 포맷을 제시해주셨죠. 여기에 더해 번역 작업 진행이 어느 정도인지 트랙할 수 있는 시스템을 고민 중이신 것도 언급해 주셨고, 기술 문서를 데이터에 입각해 렌더링하는 시스템을 새로 디자인하는 이야기도 해주셨습니다. 이는 모두 아직 진행 중인 프로젝트로 알고 있습니다.</p>
+      A: When people try to suggest a new project or pitch a new idea, do you need to contribute a completely new idea, something outside-of-box, outside of existing projects? What would be the best way to pitch a new idea?</p>
 
-    <p class="description">
-      p5js에 새 프로젝트나 아이디어를 제안할 때, 여태까지 시도되지 않은 완전히 참신한 아이디어를 내어야 할까요? p5js 프로젝트가 협력적이고, 분산된 프로젝트이다보니 때때로 Github repo를 살펴 보는 것만으로 각 서브 프로젝트의 상세한 진행 상황을 그려보기 힘들 수 있습니다. 관계자들에게 연락을 해보고, 꼼꼼히 조사해야 현재 진행 상황에 대한 윤곽이 나올 때가 있어요.</p>
-
-    <p class="description">
-      그럼, p5js에 새 아이디어를 어떤 식으로 제시하는게 가장 좋은 방법일까요?
+    <p>
+      K: Suppose the angle you’re coming from addresses specific issues, such as fixing a problem you faced while using the library or making the library more fitting for the language or context you are using. In that case, it is comparatively easier to get your pitch across.
       </p>
     <p>
-      K: 만약에 내놓으려고 하는 제안이, 자신이 겪고 있는 구체적인 이슈를 다루거나 자신이 사용하는 언어로 라이브러리를 쓰기 편하게 만드는 방향이라면, 상대적으로 설득력을 많이 얻을 것 같아요.
+      Whereas, if the angle you’re coming from is that, ‘oh, I think it would be cool to have this new feature,’ then that would be a bit hard for us to accept sometimes because there is the accessibility requirement for a new feature for the p5.js. But even if we didn’t have that requirement, it is hard to convince adding a new feature to a big project.
       </p>
     <p>
-      하지만 제안하시려는 새 기능이, ‘이런 기능이 있으면 멋지지 않을까’ 정도의 주장이라면 p5js에서 새 기능 추가에 요구되는 접근성 (accessibility) 증대 요구 조건을 만족하기 힘들 것 같아요. 하지만 비록 이 요구 조건이 없었다고 가정해도, p5js처럼 커다란 프로젝트에서 모두를 설득해 새로운 기능을 추가하는 것은 언제나 힘든 일이겠네요.
-      </p>
-    <p>
-      새로 추가되는 기능마다 누군가는 그 기능을 유지하는 노동을 해야합니다. 만약에 새로 제안된 기능이 라이브러리에서 현재 잘 작동중인 코드를 바꾸게 될 경우에는, 대신 add-on 라이브러리를 만드는 것을 부탁드리고 있어요. 하지만 반면에 새로 제안된 기능이 작동중인 코드와 별개의 상황이라면, 그러면 당연히 문제없이 제안을 실행해볼 수 있겠죠. 물론 이 경우에도 오피셜 프로젝트의 일부로 진행을 원하신다면 펠로우쉽과 같은 프로세스를 밟고 진행하셔야됩니다. (하지만 언제나 예외는 있습니다!)
-      </p>
-    <p>
-
+      Every newly added feature is a feature that we need to maintain. If the suggested new feature changes functional code in the library, we encourage people to do an add-on library instead. But let’s say the suggested new feature is something more non-tangible [not touching the functional code], then all those are perfectly fine for anyone to work on. With that said, you would need to go through the fellowship and etc. process if you want the project to be a part of an official project. Although, there are exceptions all the time.
       </p>
   </section>
   <section>
-    <h2 id="own_tools">우리에게 맞는 번역 도구</h2>
+    <h2 id="own_tools">“Our” Translation Tools</h2>
     <p class="description">
-      A: 세계화 프로젝트 이야기로 돌아가 볼까요. 프로젝트 초반에 특별히 논의된 이슈들이 있을까요? 어떤 식으로 논의가 전개되었나요?</p>
+      A: Let’s come back to questions on the internationalization project. Were there issues specifically being discussed at the beginning of the project? How did these issues evolve over time?</p>
     <p>
-      K: 세계화 프로젝트는 계속 변화하고, 계속 진화해가는 프로젝트에요. 지금 당장도 제 머릿 속에 새로운 생각들과 아이디어들이 있기도 하고요. 세계화 프로젝트의 시작은 제 펠로우쉽으로 시작되긴 했는데, 그때도 있는 글을 문자그대로 번역만하는데 국한되지 않았어요. 그런 번역 작업은 전체 프로젝트의 절반에 불구했죠. 나머지는 번역 결과물을 어떻게 유지해야 지속 가능할까에 대한 고민이었네요.</p>
+      K: The internationalization project is ever-changing, ever-evolving. Like right now, I still have new thoughts and ideas about it. It started when I pitched in for the fellowship. Even then, the idea was not just to translate existing materials because that's just half of the project. The other half of the project is about the sustainability of the translation for an open-source project.</p>
     <p>
-      “지속 가능”에 대한 고민이라는 것은, “지금 내가 이 번역을 마치고 나면, 그 결과물을 계속 관리/유지하는게 현실적으로 가능한가?”라고 물어보는 거에요. 번역물을 최신 버전으로 유지한다는 것은, 다시말해서, 번역 코드를 이용하는 경험이 (최신 버전인) 원문 코드를 이용하는 경험과 차이가 없어야 한다는 거에요. 일단 그 점이 있고요. 또 하나는, 이용자 뿐만 아니라 개발자의 경험이라는 것도 있잖아요? 혹은, 번역자의 경험이라고 할 수도 있으니: 번역 작업하는 분의 “노동의 질” 또한 어떻게 하면 최대한 윤택하게 만들 수 있을까, 도 질문해 보게 되요.</p>
+      By “the sustainability side,” I mean that once you have your project translated, is this something you can keep up with? You can keep translation up-to-date, where you can basically ensure that if someone is looking at a translated version, they would be getting the same experience as someone looking at the original [English] version. That's one side of it. The other side is something] you can call developer experience, right? Or maybe translator experience: how can you make someone who translates lives easier.</p>
     <p>
-      이 프로젝트를 처음 시작할 때는 git diff 기능을 쓴 가장 기본적인 기능을 갖춘 트랙킹 시스템을 쓰고 있었어요.  일단 번역 파일의 git diff를 구하고 diff들을 새로운 파일에 저장했어요. 그리고는 이 다른 파일들도 변경될 예정이니 체크해보세요, 뭐 대략 그런 기능들을 제공했죠.</p>
+      And at the very beginning, it was a kind of very rudimentary tracking system based on git diffs. So I do git diffs on the translation files and then list diffs in a file. And say, ‘okay these other files will change, maybe you need to look at it,’ things like that.</p>
     <p>
-      이런 논리로 기능을 만들고 있었는데, 꽤 초반에 막혀버리고 말았어요. 왜냐면 웹사이트와 기술문서가 완전히 다른 방식으로 번역되고 있었거든요. 파일 포맷도 완전히 달랐고, 렌더링 방식도 완전 달랐기에, 서로 호환이 되고 있지 않았어요. 저희 프로젝트 스케일에서는 이 둘을 동시에 관리하기 너무 힘들었어서 다시 생각해봐야 했어요. 결국 이 툴 개발은 선행되서 이것 저것 맞춰야할 것들이 너무 많아서 꽤 오랫동안 중단했어야 했어요. 기술 문서들이 렌더링 되는 방식도 바꾸고, 동시에 웹 사이트가 렌더링 되는 법도 손보고, 애초에 이게 기술적으로 가능한 일인지 알아봐야 했고요.</p>
+      The idea came from that line of logic, but it hit a roadblock pretty early on because the way the website and documentation are translated was completely different. They use entirely different file formats and rendering systems, so they were incompatible with each other. They are very hard to manage on our project’s scale, so I had to re-think the case. So that got put on hold for quite a bit because there were a lot of pre-requisites to get things aligned with each other. I needed to be able to change the way the references were rendered and at the same time the website was rendered, or if that is even possible.</p>
     <p>
-      생각해보니 이건 너무 큰일 인거에요. 그래서 도무지 손이 가질 않더군요. 결국 작년까지 질질 끌어버리고 말았어요. 그러다가 제가 석사 과정(Master of Research)을 시작하면서 드디어 시간이 생겨서 GUI(그래픽 유저 인터페이스)에 포커스하는 새 아이디어를 낼 수 있었어요.</p>
+      That is a very big endeavor, so I never touched on that. It just dragged down to last year. When I was working on my MRes (Master of Research), I got a lot of time to look into this issue, and that’s where the idea of using a graphical user interface came. </p>
     <p>
-      한 한두해 전 Mozilla Pontoon을 만날 기회가 있었는데, 이렇게 이미 있는 툴을 쓰는게 우리 프로젝트에 좋지 않을까 생각이 들었어요. 그래서 한번 해보기로 결정한 후 조사해보고, 구현해보고. 어떻게 동작하나 지켜봤어요.</p>
+      One or two years ago, I came across Mozilla Pontoon and thought maybe this pre-made tool could be helpful for us. So I went ahead, tried it, researched it, implemented it, and saw how it worked. </p>
     <p>
-      결과적으로 Pontoon은 대부분 괜찮게 돌아가긴 했는데요, 사실 아직도 p5js에 구현하는건 주저하고 있어요. 왜냐면 Pontoon 인스턴스로 배포(deploy)하는게 엄청난 작업이거든요. 그리고 이 인스턴스 자체가 로컬 인스턴스 전체를 써서 무겁게 돌아가고, 데이터베이스를 새로 따로 셋업해야 하는 상황이되요. 그리고 무료 인스턴스로는 용량이 충분하지 않기 때문에 유료 인스턴스를 써야겠죠. 여러모로 이상적이지 않은 해결법이에요. 현재로는 상용 서비스들이 더 좋은 옵션이 될 수 있을지 한번 고려해보고 있는데요, 이런 상용 서비스들이 오픈 소스 프로젝트들에게는 무료로 서비스를 지원하는 경우가 있기 때문입니다.</p>
+      For most of the part, Pontoon looks fine, but I’m still unsure about implementing it into our system because it is still much of a hassle to deploy a Pontoon instance. The instance itself is pretty heavy because you need to have a whole local instance, and we need to have a separate database. And those have to be paid instances because the free ones are not big enough. So it is still not an ideal solution. I’m currently thinking that maybe one of the commercial offerings would be a better solution since some of them provide free service to open source projects.</p>
     <p>
-      그래서 현재 게속 고민해보는 상태고요. 이런 의미로 번역 툴을 개발하는 프로젝트는 계속해서 바뀌고, 계속해서 진화하는 것이 되었다고 생각해요.</p>
+      So that’s where I’m right now, and the internationalization project became an ever-changing, ever-evolving thing. </p>
     <p class="description">
-      A: Pontoon에 대해 더 설명해 주실 수 있을까요? 본래 어떤 맥락에서 개발된 툴인가요?</p>
+      A: Can you tell us more about Pontoon? Do you know the context they were developed for?</p>
     <p>
-      K: Firefox로 유명한 Mozilla가 Pontoon 자신들의 세계화 혹은 지역화 니즈를 위해서 디자인하고 개발했어요. Firefox와 관련 프로덕트들의 모든 번역 프로세스들이 Pontoon을 통해서 제공되고 있죠. Pontoon전에는 Pootle이라는 Translate House가 개발한 또 다른 시스템이 있었는데요, 2000년대 초 혹은 90년대 말쯤 개발이 중단되었어요. 브라우져 기반 인터페이스로 번역을 관리하는 아이디어를 굉장히 초기에 제시한 프로젝트였는데, Pontoon이 여러모로 Pootle에서 아이디어를 얻어 만들어진 것 같아요.</p>
+      K: Mozilla designed and developed Pontoon for their internationalization and localization needs, where the most significant product they have is Firefox. Every single translation in Firefox or their products would be done through Pontoon. Before Pontoon, they had another old system called Pootle by Translate House, which development was stopped in the early 2000 or maybe late nineties. It was an early project with the idea of browser-based interface and translation managing, and Pontoon borrowed many ideas from Pootle.</p>
     <p>
-      Pontoon를 적용하는데 한계가 느껴지는 이유 중 하나는, 본래는 UI (i.e., Firefox) 번역을 위해 만들어진 툴을, 우리는 기술문서에 적용해보려는 등, 더 범용적인 목적에 쓰려고하니 문제점이 계속 발생하는것 같아요. 일단 문서와 같은 긴 글을 번역하는 용도를 위해 디자인된 툴이 아니에요. 그리고 많은 수의 스트링(string)을 다루기 위해 디자인된 것도 아닌데, 라이브러리 프로젝트에서는 많은 수의 스트링들을 다룰 수 밖에 없습니다. Pontoon의 한계점이 이런 맥락에서 Pontoon의 한계점들이 보이는데, 처음부터 본래 용도 외 다른 용도를 고려해 디자인된게 아니니 이해는 가요. 어떤 부분은 쉽게 적용되겠지만 나머지 부분은, 우리 입장에선, 고생 좀 해야겠죠.</p>
+      One of the things that made Pontoon hard to use for, say, all purposes such as translation and documentation, etc., is that Pontoon was originally designed for UI translation (i.e., Firefox). It is not designed for translating longer texts like documentation. And it’s not designed for having a large number of strings, as a library would typically have a large number of entries. Some of Pontoon’s limitations come from that context, which is understandable since it is not designed for other purposes. It works for some parts, but others are just some hoops we must jump through.</p>
     <p class="description">
-      A: Pontoon의 이런 한계가 사용성 (usability) 디자인 이슈에서 기인한 일까요 아니면 단순히 필요한 기술이 부재하는데서 오는 걸까요?</p>
+      A: Do you think the problem is more of a UI design issue or missing a feature?</p>
     <p>
-      K: 둘다라고 생각해요. 일단 확실히 UX 문제점들이 있어요, 예를 들어: 인터페이스가 상대적으로 짧은 길이의 텍스트만을 고려하고 있는 점. Pontoon은 영어 단어의 경우 최대 20 단어 정도만 받아줘요. 만약에 스트링 데이터가 그것보다 길어지면 인터페이스가 혼돈의 도가니가 되는데요, 스트링 데이터를 임의로 끊어버리고 일부만 보여주거나 억지로 한번에 보여주려고 하기 때문에 엉망진창이 됩니다.</p>
+      K: A bit of both. You definitely have a UI problem, like its input interface is pretty much expecting relatively short strings. In terms of English words, Pontoon expects a maximum of 20 words or something like that. If you have a string longer than that, then the interface looks chaotic because it would truncate strings in the interface or display everything in the interface, which can be really, really messy. </p>
     <p>
-      이런 점이 디자인 이슈라면, 더해서 기술적인 한계도 있는데요. 바로 번역 간 관계를 나타내는데 쓰이는 디폴트 포맷이 상당히 제한적입니다. 	통상 번역 작업을 하면 JSON 파일 포맷을 쓰는데요, 이 경우 JSON파일이 제공하는, 키(key)와 값(value)을 담는 계층적 구조(nested structure)들을 쓸 수 있습니다. Pontoon의 번역 파일은 이런 것들을 하나도 서포트하지 않아요. 계층적 구조같은 것도 없습니다. 키-값을 짝지어주는 기능(key-value pairing)이 있지만, 키 부분에 들어갈수 있는 내용이 상당히 제한적이에요. 알파벳이거나 숫자(alphanumeric)여야만하고, 특수 문자도 쓸 수 없습니다... 그래서 여러 경우에 이 제한을 우회하는 방법을 찾아야 하는 불편함이 있어요.</p>
+      That’s a bit of a usability thing. Still, there are also more technical challenges, like the default format used to represent a relationship between translations is not flexible enough. If you are doing a translation task, you almost always do it through JSON: you have a JSON file with a nested structure where there are a key and a value. Pontoon’s translation file format doesn’t support any of that. No nesting structure. There is key-value pairing, but a rule for what can be a key is very limiting. It has to be alphanumeric, and you can’t use any special symbols.. So a lot of things need to work around the rule.</p>
     <p>
-      그리고 워크플로우도 좀 제한적이에요. Mozilla가 Pontoon을 사용하는 철학이, 데이터베이스 시스템이 아니라 번역 파일 (transaltion files) 위주로 짜여있거든요. 그래서 그 파일들이 정보들을 다 가지고 있는거에요. 이게 문제가 될 수 있는데, 작업하시는 분들 중 그 누구도 이 파일들에 대해 상세하게 걱정할 필요가 없었으면 해요. 이 파일들을 직접 만질 이유가 없으면 좋겠어요. 번역을 하기위해서 이런 세부적인 것들을 걱정할 필요가 없다면 좋겠죠.</p>
+      Also, its workflow design can be limiting. The philosophy behind how Mozilla uses Pontoon is that the translation files themselves instead of what’s in the database system. So files themselves are the source of information. And that can be a bit difficult because one of the goals is that nobody ever has to think about these files, nobody has to directly touch the files. You don’t need to do that to translate.</p>
     <p>
-      그래서 제가 꿈꾸는 기능은, 예를 들어 “예전 버전 스트링 (outdated string) 기능” 같은게 있어요. 만약에 어떤 스트링이 원본 언어에서 바뀌었다고 생각해봐요. 이걸 “구버전"으로 마크해두면 번역가분들이 이 부분을 따로 모아 보시면서, 이 부분은 패스, 이 부분은 바뀐 내용에 맞춰서 조금 고쳐봐야겠네, 하실 수 있겠죠. </p>
+      So a feature that I really want, for example, is the outdated string feature. Let’s say a string changed in the original language. I want to mark it as “potentially outdated” to have translators look, get their translated strings to say this string is fine and other strings they would be tweaking to match the updated original. </p>
     <p>
-      이런 기능은 Pontoon의 구조를 통해서는 구현할 수가 없어요. 왜냐면 Pontoon에서는 원본 파일을 오리지널로 보존하기 때문에 만약에 무언가를 업데이트 하려면, 파일 안에 있는 키(key)와 그에 상응하는 태그(tag)를 업데이트하지, 직접적으로 파일에 들어있는 값(value)을 업데이트하지 않아요. 보통 UI가 작동하는 형태에 맞춘 방법이죠. 만약에 어떤 UI에서 한 스트링이 바뀐 새 버전이 나와버리면, 지금 작업하고 있는 버전을 따로 핀(pin)해두어야만 해요. 그 다음에 새 버전을 빌드할 때는, 이전 작업하던 다른 버전이 아닌 이 새 버전 내부를 보게 되겠죠. 현재 쓰고 있는 소스 코드만 바꿀 수 있는거에요. </p>
-    <p>
-       하지만 저는 p5js 기여자분들이 이런 버전들이나 소스 코드 파일들에 대해 고민할 필요가 없었으면 좋겠어요. 자동으로 이런 파일들을 만들어버리면, 랜덤한 키가 배정되고.. 이 부분은 정말 어떻게 우회할 수 있을지 아직 잘 모르겠어요. 이미 존재하는 툴을 가져다 쓰게되면, 우리에 맞는 해법이나 우회법이 있을거라고 기대할 수 없어요.</p>
+      That feature is not really possible with Pontoon. Because the idea of Pontoon is that that the files in the original language are kept as the original, and if you have something to be updated, you update the key in the file. You update the corresponding tags in the files instead of directly updating the value. And that is pretty much aligned with how UIs work. If you have a string in a UI that changed in the original, you would want to pin the version you are building to that particular version. And then, if you are building a new version, you would want to look through the new version etc. So you can change what you're using, the source code itself. But for the p5.js, I don't want anyone to think about those files. Those files would be automatically generated to have random keys for the source. That I still couldn't find a way around it.</p>
     <p class="description">
-      A: 다른 옵션이나, 혹은 직접 새로운 툴을 개발하시는 것도 생각해보신거죠?</p>
+      A: Are you researching other options and thinking of making your own tools?</p>
     <p>
-      K: 아주 잠깐 상업 서비스들을 찾아봤었어요. iOS 앱이라면 POEditor와 Transifex가 널리 쓰이는 것 같더군요.</p>
+      K: I briefly looked into commercial offerings. POEditor and Transifex are big commercial offerings that would be useful if you have an iOS app that you need to translate.</p>
     <p>
-      하지만 보다보니, 상업 서비스들도 Pontoon과 별로 크게 다를게 없었어요. Pontoon이 상업 서비스들보다 어떤 면으로는 더 많은 기능들을 제공하는 것 같아요. 하지만 상업 서비스들을 이용하는 것의 가장 큰 장점은 배포(deployment)에 대해서나 서버에 대해서 우리가 고민할게 별로 없다는 거죠.</p>
+      But from the looks of it, they are not really offering that much different things than what Pontoon offers. I think Pontoon may actually offer more than them in some sense, but the main benefit I get from these commercial products is that I don’t have to worry about the deployment side or the server. </p>
     <p>
-      다른 고민할 점은 커스토마이제이션 (customization)과 같은 기능이 있겠고요. 그러고보니 Yukie Nomiya님이 웹사이트 번역 작업을 위해 트래킹을 작업해주셨었어요.<label for="sn-nomiya" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-nomiya" class="margin-toggle"/><span class="sidenote">Yukie Nomiya의 Google Summer of Code 프로젝트에 대해서는 <a href="https://github.com/processing/p5.js/blob/main/contributor_docs/project_wrapups/yukienomiya_gsoc_2020.md">i18n Improvements and Italian translation</a>에서 찾아보실 수 있습니다.</span> Google Summer of Code 프로젝트의 일환으로 작업해주셨지요. Pontoon이 해주는 프로세스들을 p5js 내부에서 처리하게끔 구현하는 아주 흥미롭고 좋은 프로젝트였습니다. 이런 식으로 맨 처음 시작부터 끝까지 우리가 시스템을 만들면 우리 목적에 딱 맞게 시스템을 짤 수 있다는 점이 좋습니다. </p>
+      We may need to consider customization, and I think Yukie Nomiya worked on a version of translation tracking for the website.<label for="sn-nomiya" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-nomiya" class="margin-toggle"/><span class="sidenote">Yukie Nomiya's Google Summer of Code project: <a href="https://github.com/processing/p5.js/blob/main/contributor_docs/project_wrapups/yukienomiya_gsoc_2020.md">i18n Improvements and Italian translation</a></span>  It’s an interesting project that looks like a version of what Pontoon does but within the p5.js, which is nice. Something like that, built from the ground, is great because it will fit our purposes. </p>
   </section>
   <section>
-    <h2 id="contributors_ux">오픈소스 기여자 경험의 질</h2>
+    <h2 id="contributors_ux">Contributors and Maintainers Experience</h2>
     <p class="description">
-      A: 폭 넓은 의미로, 세계화에 얽힌 이슈들에는 어떤 것들이 있을까요?</p>
+      A: What do you think are the challenges of internationalization, broadly speaking?</p>
     <p>
-      K: 많은 분들이 세계화(internationalization) 작업이라고 하면, 이걸 번역했으니 끝이다- 이런 식으로 생각하시기 쉬운 것 같아요. 하지만 많은 경우에 오픈소스 소프트웨어에서 세계화 작업이라는게 여기서 끝나지 않습니다. 위에서 이야기했듯, UI를 번역하는 경우처럼 완성된 소프트웨어의 일부를 변경하고, 마무리 지은 후, 쉽(ship)해버리는 것으로 생각하기 쉬워요. 하지만 이 경우는, 예를 들어, 현재 개발 진행 중인 프로젝트의 기술 문서를 번역하는 경우와 같을 수 없습니다. 기술 문서의 정보가 틀려서 수정하거나 내용이 누락된 것을 발견할 수도 있으니 중간에 업데이트 과정이 계속 있을거에요.</p>
+      K: Often people think about internationalization this way: I translated this, so it is translated. But that isn’t how a lot of these things work. Going back to the previous point, it looks like UI translation, you revise a version of your software, you are done, and ship it up. This will not be the same for, let’s say, translating documentation for a project that is actively being developed. The documentation will change, and there will be incorrect or missing information.</p>
     <p>
-      p5js 프로젝트의 경우 업데이트 주기가 앞서 이야기한 UI 경우보다 훨씬 자주 일어나요.  그리고 “제대로된 정보를 원한다면 영어로 된 기술 문서를 봐라. XX언어로 된 문서는 틀렸다”와 같은 경우를 정말 피하고 싶기 때문에 번역을 최대한 최신 버전에 맞춰 유지해 두어야 하죠. 비영어권 언어로 쓰여진 기술문서가 도태되게 내버려두는 것은 딱잘라 말해 옳지 않습니다. 영어를 쓰지 않는다는 이유로 누군가가 기준이하의 경험을 하게 두어서는 안됩니다.</p>
+      The rate of change for the p5.js project is a lot higher than a UI project. And we need to keep things up-to-date because we want to avoid a case where, “if you want proper documentation, you should look at the English one and so-and-so language one is not accurate.” That is just not right. Someone shouldn’t be having a subpar experience just because they are not using English.</p>
     <p>
-      또 다른 부분으로 UX(사용자 경험, user experience)를 생각 안 해볼 수 없어요. 다양한 지점들이 있어요. 기술문서의 UX, 번역의 UX, 그리고 기여자들의 UX까지 생각해야 하죠.</p>
+      The other part is user experience. You have many different aspects. There is the user experience of documentation and the user experience of the translation. You may want to add in the experience of the developers. </p>
     <p>
-      엔드 유저(end-user)들의 입장에선, 번역문을 어떤 식으로 열람할지, 그리고 자신들이 필요한 정보를 찾기까지 얼마나 많은 클릭 수가 필요 할지, 같은 부분이 중요하겠죠. 만약에 영어로 된 페이지에 당도했다면, 최소한의 클릭만으로 자신이 사용하는 언어로 전환할 수 있는가, 같은요.</p>
+      For the end-users, it would be more about how they could access this translation and how many clicks they need to have the information they need. If you are on this page in English, can I just click about them and then go to my preferred language. </p>
     <p>
-      그리고 번역문의 질 또한 빼놓을 수 없겠어요. 제가 중국어 번역을 작업하는 동안 노력을 기울였던 부분 중 하나가, 영어 문서를 번역한 느낌이 아닌 처음부터 중국어로 쓰여진 글의 느낌을 주고 싶었어요. 이렇게 하려다보니, 같은 뜻을 전하기 위해 문장을 아예 새로 써야하는 경우가 많았어요. 때때로 아예 원문 문장 구조를 잊어버리고 진행하려고 노력하거나, 혹은 자연스러운 문맥을 위해 문단 전체를 완전히 다 갈아엎은 경우도 있었죠.</p>
+      And there is also the quality of the translation itself. For example, one of the things I focused on while working on the website  Chinese translation is that I want to write in a way that feels like it’s written in Chinese instead of translated from English documentation. In this case, I must completely rewrite the sentence to convey the same meaning. Sometimes I will need to try to forget the original sentence structure or entirely rewrite a paragraph to make it sound better.</p>
     <p>
-      번역자의 UX를 논한다면, 일단 번역자분들이 구체적으로 어떤 방식으로 번역 작업을 하시게 될지 생각해봐야해요. 이걸 고려하다보니, 제 경우에는, 번역 프로세스에 git을 사용하는 횟수를 최대한 줄이는 방법을 계속 생각하게 되요. 번역가분들이 꼭 git을 사용하는 법을 아셔야 할까? 오픈소스 소프트웨어에 기여하는데 꼭 개발자가 될 필요는 없잖아요.</p>
+      For translator experience, we want to show how they can actually contribute to the translation. This is why I want to avoid using git as much as possible. I don’t want them to use git, I don’t want them to be full-fledged developers. </p>
     <p>
-      하지만 현대 상황으론, 최소한 repo에서 pull을 할 줄 알아야하고, 웹사이트에 대한 구조도 대략적으로라도 알아야하죠. 입력한 글이 어디에 나타나게 되는지도 알아내야하고요. 거기에더해, 로컬에서 라이브러리를 빌드해서 오류는 없는지, 렌더된 페이지가 마지막에 어떻게 보이는지도 체크할줄 알아야해요. 여기가 끝이 아니죠. 여기에 공식 repo를 fork해서 자신의 fork에서 Pull Request를 넣고.. 이 모든 과정을 아셔야하는거에요. 이게 다 준비단계에 불과한거에요. 웹사이트 전체를 번역을 하든, 한 문장을 고치든, 기여 스케일에 관계없이 모두가 거쳐야 하는 과정이죠.  저희가 번역가분들께서 기여해주셨으면 하는 부분은 그런 부분이 아니니, 이런 준비단계들을 어떻게든 최소화하고 싶어요. </p>
-    <p>
-      그리고 번역자분들의 “노동의 질”도 생각해봐야죠. 제 연구를 진행하다가 알게된 것인데요, 사람들이 기계 번역툴을 사용할 때 탭을 바꾸는 과정을 줄여줄수록 좋은 결과가 나왔대요. 예를 들어, 새 탭을 열고, 번역툴 웹사이트에 가서, 뭔가를 타이핑하고, 아웃풋을 확인한 다음에, 다시 원문이 있는 탭이나 창으로 찾아 가고. 이런 중간 프로세스들을 없앨수록 번역 작업 노동의 질이 크게 향상되었다고 해요.</p>
+      You have to pull the repo have to understand how the website is built, more or less. Also need to figure out if this string corresponded to this place. Now maybe you need to build locally to make sure everything works and check it on the actual render page itself. And then you have to fork the repo and push it through your own fork PR, … all those sorts of things. And that’s all for prerequisites, regardless of whether you are doing full translation or correcting one sentence. That’s a bit disproportional to what we expect translators to focus on, and we want to avoid that. Then there is this quality of experience. According to my research, people benefit greatly from minimizing the need to switch between tabs while using machine translation. So they don’t have to go to, for example, the Google Translate website, type things in, look at its output, and then switch back to type in other things, maybe in another window, in another program. Minimizing that in the process will improve the quality of the translation experience a lot. </p>
     <p class="description">
-      A: 그리고 전에 개발자들의 “노동의 질”에 대해서도 언급해 주셨죠?</p>
+      A: You also mentioned experience of the developers.</p>
     <p>
-      K: 맞아요, 개발자분들을 위해서는 전체 프로세스가 복잡하지 않고 단도직입적이 될수 있게 노력하고 있어요. 자신의 코드가 제대로 번역이 될지 아닐지 걱정하시는 일이 없도록 해드린다는 이야기죠. 혹은 자신의 코드가 번역 시스템으로 들어가는건지 아닌지, 이런 걱정도요. 이런 걱정에 들어가는 인지부하(cognitive load)나 실수가 발생할 수 있는 상황을 최소화하면 좋겠죠. 하지만 디자인 태스크는 잘하기 참 힘들어요. </p>
+      K: Yes, so for the developers, the goal is to make the whole process as straightforward as possible. This means they don’t have to worry about how or whether their code will be appropriately translated or not. Or whether it will be put into the translation system or not. If we can minimize the cognitive load to worry about these and the potential for a mistake, that would be great. But I anticipate that design task to be very, very challenging. </p>
     <p class="description">
-      A: 현재 웹사이트의 경우, 번역 텍스트들을 코드와 따로 분리해두었고요, 따로 repo도 만들어두셨죠. p5js의 어떤 컴포넌트들의 경우, 예를 들어, Friendly Error System (FES)과는 다르게요. FES 또한 패키지화해서 따로 분리될 수 있을 것 같아요. 하지만 번역과 코드가 더 이상 얽혀있지(entangled)않다면 , 그에도 장단점이 있겠죠? 기여자분들은 정말 다양한 배경에서 오시는데, 아마 참여 계기나 무엇을 얻고 가고 싶은지 우선 사항(priority)도 다 다르실거에요.</p>
-    <p class="description">
-      예를 들어 p5js를 영어가 아닌 다른 언어로 가르치고 싶으신 분들과,  장기적으로 미래에 개발자 커뮤니티의 일원이 되고 싶어 p5js 프로젝트에 오신 분들의 계기나 우선 사항은 다를거에요. 어느 경우에는, 라이브러리의 모든 부분들을 한군데에 모아서 보고 싶어하실 수도 있으니까요. 코드의 스케일에 따라 디자인 전략이 달라지려나요?</p>
+      A: We sort of isolated the translation text and the code for the p5.js website already, and it has its own repo. Compared to that certain parts of the p5.js, for example, the Friendly Error System (FES), the website lives in a different structure. I can see the FES can be packaged and isolated out later also. But I also can see the pros and cons of keeping the translation and the main code “entangled.” The contributors coming from different backgrounds may have different motivations and priorities. For example, the motivations of instructors who want to teach p5 in a language other than English can be different from people who start looking into the p5js project to become a part of the open-source software community in the long term. In some cases, maybe a contributor wants to see every component of the project in one place instead of being isolated out into packages and being less tangible. Perhaps this design will depend on the scale of the code.</p>
     <p>
-      K: 제 생각에는, 스케일을 떠나 생각해본다면, 다 연결된 하나의 문제인 것 같아요. 한편으론, 제 이상 속에서는, 오리지널 텍스트와 번역 텍스트가 한덩어리처럼 차이가 없었으면 한단 말이에요.</p>
+      K: I think, apart from scale, it is more or less the same problem. On the one hand, ideally, I would like to see that there is no distinction between the original text and the translated text. </p>
     <p>
-      기여자분들 우리 모두 파일 목록들 속, 스트링 목록 속, 어딘가에서 작업하고 있을텐데요, 구조가 어떻게 되어있든 결국에는 모든 스트링들이 하나의 거대 코드 덩어리에서 불려나오는 거죠. 소스 코드를 보시면 이 구조라는게 복잡도를 올리기도 해요: 템플릿 이름들이 한무더기, 변수 이름이 한무더기, 거기에다가 우리 스트링들도 한무더기 있고. 복잡도가 올라갈수록 모든게 좀 더 불투명하게 되겠죠.</p>
+      We all be writing into the list of files, followed by the list of strings, and regardless of the details of the structure, all strings will be pulled from there. But this structure also adds the complexity that if you look at the source code itself, you get a bunch of template names, variable names, and strings themselves, making things a bit more opaque.</p>
     <p>
-      그 안에서 균형점을 찾아가는게 되겠죠. 누구나 선뜻 코드 아무 곳이나 열어서 마구 실험해(hack)보실 수 있는, 그런 기회를 주는 디자인을 유지할 수 있는 균형점을 찾으면 좋겠죠. 실험해보시면서 뭘 망가트리는 것에 대해 걱정을 많이 안하셨으면 좋겠어요. </p>
+      So there are trade-offs there. I guess part of it is to find where this balance is because we still want people to be able to just jump in and hack things. We don’t worry too much about breaking everything while experimenting. </p>
   </section>
   <section>
-    <h2 id="between_languages">언어를 옮기며 마주친 고민들</h2>
+    <h2 id="between_languages">Between Languages</h2>
     <p class="description">
-      A: 중국어로 웹페이지 번역 작업을 하셨을때 기술 용어 리스트를 만드셨었잖아요. 저희도 한국어로 FES를 옮기면서 기술 용어들을 번역하고 있는데, 이게 상당히 어려운 작업이더군요. 한국어는 특히 외래어를 번역하는 방식이 많아서 더 혼란스러워요. 소리나는대로 적을 수도 있고 (음차 표기) 혹은 순수 우리말나 한자 단어로 뜻을 풀어 옮기기도 (자국어 번역) 해요.  심지어 한문어로 옮길때도 일본식 한자 단어를 참조 할지, 아니면 중국식 한자 단어를  참조 할지, 아니면 다른 새로운 방식을 고안해야하나, 그런 고민까지 해보게 되더군요.</p>
+      A: Let’s talk about the glossary. You made the list of technical terms in Chinese for translating the website.
+    </p>
     <p class="description">
-      이런 배경에서, 영어 기술 용어를 중국어로 번역하신 경험에 대해 더 듣고 싶습니다.</p>
-    <p>
-      K: 영어 기술 용어들을 번역할 때, 리스트를 만드며 하나 일정한 프로세스를 썼었어요. 그렇게 한 가장 큰 이유는 번역에 일관성을 주어, 사용자분들께 혼란을 줄 수 있는 상황을 최소화하려고 했어요.</p>
-    <p>
-      목록을 만든 과정은, 각각의 스트링들을 작업하고 있다가 기술 용어를 만나게 되는데요. 프로그래밍 언어 전문 언어일수도 있고요, 수학 전문 용어가 나오기도 했어요. 이런 기술 용어들을 만나면 선뜻 번역하기 쉽지 않더군요.</p>
-    <p>
-      이럴 때 저는 일단 검색의 도움을 받긴 헀는데, 그냥 번역툴을 쓴게 아니라 분야-특정 자료들을 찾으려고 노력했어요. 흔히 쓰는 번역툴들이 (Google Translation 등) 아직 특정 분야에 맞춰 트레이닝 된게 아니라서 결과가 좋지 않더군요. 이렇게 검색을 하다가, 특히 중국어로 된 기술 포럼이라거나 MDN (Mozilla Developer Network), React, 혹은 Vue.js의 기술 문서와 같은 이미 중국어로 번역된 웹사이트들을 찾아보게 되었어요. 비슷한 맥락에서 작업된 중국어 번역들을 비교하며, 어떤 단어를 쓰고 있나? A 표현 아니면 B 표현을 썼나? 아니면 혼용해서 혼란이 있나? 이런 질문들을 던졌습니다. 최종 목표는 대다수가 합의하는 번역 단어가 있나 찾아보는거 였어요. 이 컨셉을 지시하기위해 가장 흔히 쓰이는 단어가 뭘까 찾아본거죠.</p>
+      I’m having difficulty translating technical terms in Korean because we have different ways of translating loanwords or foreign-originated words (외래어). You can translate a foreign word based on sound (phonetic translation) or based on meaning using Korean or Hanja (Chinese letters) expressions. The Korean language even has different ways to create a Hanja word, either looking up Japanese or other Chinese-speaking countries. Out of all these choices, how do one select one?</p>
     <p class="description">
-      좀 더 고민되는 상황을 이야기해볼까요? p5js를 한국 프로그래머들이 통상적으로 소통하는 방식을 기준삼아 기술 용어들을 번역했다고 칩시다. 그렇게 번역한 기술 문서나 에러메시지를 사용해 다른 리소스를 찾으려고 하면 아무래도 제한된 결과들만을 접하게 되는 상황이 발생합니다. 왜냐하면 대부분의 리소스들은 아직 영어로 존재하니까요. 이 문제를 해결하기위해, 혹자는 아예 영어 기술 용어 번역을 금하거나 아니면 번역 단어를 동시에 표기하는 것을 추천하기도 해요.</p>
+      Long story short, please share your process of translating English technical terms into Chinese.</p>
     <p>
-      K: 저도 그렇게 표기하는 경우를 공식 번역에서 본 적 있어요. 보통 “시작하기(Getting Started)”라든가 튜토리얼 페이지에서 그런식으로 표기하죠. 하지만 그 후에 이 용어가 나오면 그 때는 원문을 보여주지 않아요. 에세이를 쓸때와 비슷한 방식이라고 생각합니다.  생소한 용어를 처음 시작할때 상세히 표기해주고 그 후로는 사람들이 그 용어를 알고 있다고 상정하는거죠. 한가지 방법이 될수 있겠네요.</p>
+      K: I had a specific way of translating English technical terms, having a list of translated terms. And the reason was to be consistent with your translation, which will simply reduce the chance of confusing users. </p>
     <p>
-      제 경우에는, 제가 맨 처음 프로그래밍을 배울 때의 기억을 더듬어 보고, 그때의 경험을 기준으로 삼아 보곤해요. 그 때 저는 진짜로 학교 사서선생님을 찾아가서 프로그래밍 책들을 빌려왔었거든요. 그런데 책을 보니까 똑같은 문제가 있는거에요: 책마다 용어가 다 다른거에요! 모르고 읽고 있다가, 어느 순간 머리 속에서 연결되더군요: “아 이게 사실 다 같은 영어 단어였구나!”</p>
+      The way the list itself is built is that as I was going through individual strings when I came across a technical term — which can be programming-specific but also includes mathematic terms — I wasn’t sure how to translate it. What I did was basically start searching online for not only translation services but also domain-specific translation references. Google Translation and other translation services often don’t perform very well because they are not yet trained specifically for the programming context.</p>
+    <p>
+      So I would search for those terms and look for forums and help pages in Chinese and others in Chinese, such as the MDN (Mozilla Developer Network) website, React website, and Vue.js website. They would already have Chinese translation, so what translated word do they use if they use that term? Do they use terms A or B, and do they conflict? And the goal is to find some consensus out there among the people. This is what most people use to refer to this concept.</p>
     <p class="description">
-      A: 각기 다른 레퍼런스 사이 용어 통일을 해주는 리스트가 있으면 도움이 될까요?</p>
+      A: I want to discuss a tricky situation concerning inclusivity. Let's say we translated p5 following the convention of how Korean programmers talk and use that as a baseline for translating the technical terms. Then when people try to search using the translated error messages or references to find other resources, they sometimes end up with limited results because most of the available resources are still in English. Some even suggested showing the original English term and the translated words side-by-side to remedy this.</p>
     <p>
-      중국어의 경우에는, 다른 표준 자형들, 정체(traditional Chinese)와 간체(simplified Chinese)가 나뉘어져있고, 거기에 더해 지정학적인 이유들로 문화권마다 완전히 다른 용어로 번역을 하곤 해요. 같은 언어라고 해도 하나의 번역이 간체에서는 허용되는데 정체에서는 허용되지 않기도 해요. 게다가 번역가들 마다 번역들이 또 제각각이기도 하죠.</p>
+      K: I see that kind of approach sometime in the official translations as well. And what is often done on the “Getting Started” page or tutorial pages so they can mark it at the beginning. And then, if you come across another instance of the term, it is not accompanied by the original string. It is kind of how you write an essay. [You define terms] at the beginning, and then assume people know the terms from that point on. That’s one way people approach it.</p>
+    <p>
+      The way I approach it is I refer back to when I first started learning to program. I literally went to my high school’s librarian and borrowed programming books in Chinese. I faced the same issue: different books used different terminology, and I had to make a mental note: ‘oh, they are referring to the same thing!’</p>
     <p class="description">
-      A: 그럼 정치적 혹은 문화적인 이유들로 이들 중 한 버전이 채택될 것이고, 해당 언어문화권 커뮤니티 사람들이 해당 버전을 유지하는 방식이 되겠군요. 어쩌면 어떤 커뮤니티가 해당 번역/언어에 좋은 유지자 (maintainer)가 될 수 있을지 고민하는게 좋은 방향일지도 모르겠네요.</p>
+      A: Maybe providing a cross-reference list of terminology can be helpful.</p>
     <p>
-      K: 번역자나 번역 관리자라면 번역하는 언어 문화권의 감수성을 지니고 있어야 한다고 생각해요. 저희 기술 문서를 보시는 분들 중에는 영미권 배경이 아니신 분들도 많아요. 이런 배경의 관점도 이해하며 번역 작업이 진행되어야 겠죠.</p>
+      In Chinese, there are traditional Chinese and simplified Chinese. And because of geopolitical reasons, they’ll use completely different terms in translation most of the time. One translation version that would work for simplified Chinese will probably not work for traditional Chinese, although they are the same languages. This difference is also because they are almost always translated by different people.</p>
     <p class="description">
-      A:  번역 작업 중에서 되도록 중국어로 읽히기 가장 자연스러운 표현을 찾으신다고 하셨어요. 한국에서 쓰는 표현 중 “번역체”라는게 있는데요. 어떤 분들은 이 번역체 특유느낌을 즐기기도 해요. 언어를 통한 특정 문화권 페티시(fetish) 일종일수도 있겠네요.</p>
+      A: For political or cultural reasons, one ends up choosing one version of the translation and going with it. The corresponding community of people will need to maintain the part.</p>
     <p class="description">
-      중국어에서도 비슷한 일들이 일어나나요? 중국어와 영어 언어 차이에서 일어나는 문제들은 없었나요?</p>
+      Maybe a good question is how to identify which community can be a good maintainer for a specific translation/language.</p>
     <p>
-      대부분의 경우, 문장 구조의 차이에요. 어떤 식으로 문장 구를 나누고, 어떤 순서로 표현되는지.</p>
-    <p>
-      하지만, 어쩌면 가장 확연한 예는 구두법(punctuation), 문장 부호같아요. 중국어에서는 문장의 끝이 ‘.’(period)가 아니에요. 문장의 끝을 알리는 건 작은 동그라미 (고리점) ‘。’에요. 나머지 문장 부호들도, 예를 들어 콤마 라든가, 영문 문장 부호들과 비슷하게 생기긴 했는데 활자 너비가 달라요. 그래서 중국어 활자는 문장부호가 붙었든 (punctuation-corrected) 붙지않았든, 일관적으로 정사각형 형태를 띄어요.</p>
-    <p>
-      그래서 어떤 문제가 발생하냐면요, 개발자가 페이지를 생성하려고 하는데 마침표를 영문식으로 하드코드(hard-code)하려고 하는거에요. 이런 일들이 생각보다 꽤 자주 일어납니다.</p>
-    <p>
-      템플릿의 경우, 여름 동안 특정 이름들, 예를 들어 링크 같은 것들은 번역하지 않아요. 가을에도 번역 파일로 옮겨지지 않았는데, 이 링크들이 하드코드 되어버린거에요. 문장 끝이 링크로 끝난 경우, 이 링크들에 마침표가 붙어버렸죠. 이 경우 문장 부호가 올바르게 적힌것 것도 아닐뿐만 아니라 주어-동사-목적어의 순서가 언어마다 다르니까 중국어를 포함해서 다른 언어들에서도 문제가 생겨버렸어요.</p>
-    <p>
-      특정 아이템을 특정 부분에 하드코드 (hard-code)해두면 이렇게 문제가 생깁니다. 문장 구조가 고정되서 바꿀수가 없으니까요. 이런 것들도 어려움 중 하나네요.</p>
+      K: One of the things that would be good to have in, say, a maintainer or any translator is to have that kind of sensitivity to the language you’re working with. There are users using our documentation as shown in their language and do not come from an Anglo-centric background. Understanding that and coming from that perspective would be a better approach. </p>
     <p class="description">
-      A: 이런 이슈들을 다루는 내부 가이드라인이 존재하나요?</p>
-    <p>
-      K: 네 기여자들을 위한 문서(contributor docs)에 작업 방법들과 템플렛을 쓸 때 유의할점들을 써뒀어요. 예를 들어, 문장부호를 하드코드하지 마시고, 만약에 작업 중인 언어에서 특정 스트링을 비어두기로 정했어도 (문장 구조 고정을 피하기 위해서)하드코드된 파트 앞으로 이 스트링들을 가져와야해요. 아까 이야기한 내용과 같은 이야기로, 개발자들이 알아두어야할 사항들이죠.</p>
+      A: In your article, you actually talked about making the translation feel as native as possible, as opposed to what, in Korea, the expression is called 번역체 (“translationese”). Sometimes people enjoy the experience of reading in “translationese,” even though it is not how Korean is spoken. </p>
     <p class="description">
-      A: 어쩌면 한국어에 국한된 이야기일지 모르겠습니다만, 어떻게하면 번역문의 톤이 포용성(inclusivity)을 담을 수 있을지 많이 고민하게 되더군요. 초대하는 느낌과 존중하는 느낌을 담은 한국어의 어미를 고르는 것도 조심스러운 작업이었습니다. 어떤 선택을 하냐에 따라 사용자와 소프트웨어 간의 사이가 미묘하게 조정되는 상황이었어요.</p>
+      When you work with Chinese languages, do you have similar issues? What were the problems you had because of the difference between English and Chinese languages?</p>
     <p>
-      K: 저도 중국어 번역 작업을 하면서 힘들었던 것 중 하나가 중국어의 톤이 영어 원문과 아주 달랐다는거에요. 제 경우, 같은 내용을 담은 글이라도 중국어로 읽을 때와 영어로 읽을 때 다른 감각, 다른 감수성을 느끼거든요.</p>
+      K: A lot of the time, it is about sentence structure. It is about how you phrase things and how things are expressed.</p>
     <p>
-      아마 어떤 특정 톤을 선택하느냐, 그리고 번역의 유창함의 정도에 따라, 번역문이 아닌 본래부터 중국어로 쓰인 느낌이 들겠죠. 글의 톤이 올바른지 점검할 때, 세심하게 체크해야할 것들이 있는데, 예를 들어 인칭대명사 이슈가 있겠네요. 이 인칭대명사는 흔히 말하는 성별 인칭대명사 (gender pronouns)이야기는 아닌데요, 왜냐면 중국어에서는 인칭대명사에서 성별을 완전히  생략하는게 가능해요. 하지만 “you"라는 인칭대명사는 중국어에 여러 레벨로 나뉠 수 있어요: 격식체와 비격식체 등으로요. 그럼 언제 어떤 버전을 써야 할까요? 제가 처음에 번역 작업을 할때는, 최대한 격식체를 쓰고 모두 통일해보려고 했어요. 하지만 그렇게 번역을 하고 보니 텍스트가 너무 격식을 차린 것처럼 느껴지는거에요.  만약에 좀 더 캐주얼한 톤을 써보려고 비격식체를 섞어 보았는데, 실은 같은 단어가 그저 다르게 읽히고 있는 거죠. 어찌되든 같은 뜻을 전하는 거니까요. </p>
+      But I guess a more concrete example is punctuation, which is the most obvious example. The reason is that in Chinese, the full stop of a sentence is not the period ‘.’ in Chinese. The full stop is a small circle ‘。’. The rest of the punctuations, for example, commas, although they look similar, they take up different widths. So Chinese characters, regardless of what character it is punctuation-corrected, usually will take up the full square. </p>
+    <p>
+      The problem often comes up, like when a developer tries to write an output page and hard-code a full-stop period. This happens quite a lot.</p>
+    <p>
+      For a template, in summer, we usually don’t translate specific names like links. They are not translated, so that didn’t go in the translation this fall. Instead, these links were hard-coded in. So if that link is at the end of the sentence, they’re just at a full stop there. In that case, not just the punctuation doesn’t work, but the whole thing doesn’t work because the subject-verb-object order is different, not just for Chinese but for many other languages as well.</p>
+    <p>
+      If you hard-coded a specific item at a specific location, it won’t work. Because it’s hard to change the sentence structure around. So that is part of the challenge as well.</p>
+    <p class="description">
+      A: Is there a guideline to relieve these issues?</p>
+    <p>
+      K: Yes, in the contributor docs, I wrote instructions and about things to be careful about when you are writing the template. So, don’t hard-code punctuations. Even if your language is just an empty string, make sure you put it in front of all the hard-coded parts so people can change the subject-verb-object order. So these are the kinds of things that call back to what we talked about before, what the developers need to be aware of.</p>
+    <p class="description">
+      A: Maybe this only applies to Korean, but when we are translating, we have to think about how to create a language/tone to increase inclusivity. We had to be very careful about choosing the “sentence-closing ending” of Korean sentences because different choices dramatically change how inviting or respectful the sentence sounds and re-establish the relationship between user and software.</p>
+    <p>
+      K: One of the things I find a bit difficult translating into Chinese is that its tone of voice differs from what the English language sounds like. For me, when I’m reading the Chinese version of the text and the English version of the text, quite often, they give a different sense, a different sensibility.</p>
+    <p>
+      I guess the tone of voice and the fluency of the translation make certain text seems like it’s written in Chinese originally instead of being translated from another language. Make sure the tone of voice is right, and pay attention to details such as the pronoun issue. It’s not exactly like gender pronouns because you can completely ignore gender pronouns in Chinese, and it works. But it is more like two different forms of pronouns for “you” in Chinese: one is more formal, and the other is more informal. So, when to use which one? In the beginning, I tried to use the formal one as much as possible and tried to enforce it, but then the text sounded too formal. Whereas if you want a more casual tone, you will mix in the informal one, but in practice, they are actually the same word that just read differently. So they look different and sound a bit different, but they would try to say the same thing.</p>
   </section>
   <section>
-    <h2 id="new_contributions">새로운 만남들을 기다리며</h2>
+    <h2 id="new_contributions">Invitation to Future Contributors</h2>
     <p class="description">
-      A: 자, 분위기를 바꿔서 좀 다른 질문을 해볼까요. p5js를 잘 대표하는 성격 혹은 목소리를 상상해주세요.</p>
+      A: As we near the end of our interview, let’s try a new topic. What would be the best personality/voice for the p5js project?</p>
     <p>
-      K: p5js의 느낌이라면, 너무 격식을 차리거나(formal) 테크니컬(technical)한 느낌은 아니에요. 수퍼-프로페셔널(super-professional)하게 보이려고 노력하지 않고요. 오히려 엉망진창, 허당(mess)인 모습을 그대로 보여주는걸 지향하는 것 같은데요? 전 우리 프로젝트가 엉망진창인걸 인정하긴 하는데, 그런데, 잘 돌아가고 있잖아요?! 정말 누구나 들어와서 더 좋은 코드를 만드려 같이 노력할 수 있는 그런 분위기고요.  하지만 우리 프로젝트를 예컨데, 자바스크립트 전문가들에게 보여주면, “왜 이 기능을 쓰지 않죠?” or “왜 그런 식으로 코드를 짰죠?” “왜 어쩌구 저쩌구?” 이런 반응이 나오겠지만요. 하지만 아시잖아요, 이 방식이 우리가 지향하는 목표를 위해서는 꽤 잘 맞게 작동하고 있죠. 그리고 이런 태도가 바로 p5js의 목소리고, 개성이라고 생각해요.</p>
+      K: For p5js, I don’t feel that it should be overly formal or technical. We are not trying to present ourselves as super-professional. What we aim to be is more like a mess. I’ll admit it’s a mess, but it works! And anyone can work on it. But if you show the project to a professional Javascript software engineer, they would say, “why are you not using that?” or “why are you using that?” “why this and that,” but you know, it works for our purposes. And I think that attitude is the tone of voice that p5js had its own as well.</p>
     <p>
-      그리고 이런 특별한 태도를 다른 언어나 문화권으로 잘 번역해내는 작업은 쉽지 않은 일이 될거에요. 이런 경우에는 실제로 저희 소프트웨어를 쓰실 분들이 직접 참여하실 수 있게 하는게 최선이라고 생각해요. 일단 쓰시고, 참여하시게 기회들을 열어두는거죠.</p>
+      And it’s true that trying to translate that particular attitude across different languages and cultures will be difficult. In a case like that, I think the best thing to do is involve people who will use it. You kind of let them use it and ask for feedback.</p>
     <p class="description">
-      A: 계속 변화하는 프로젝트니, 새로운 분들과 대화하고 새로운 분들이 참여하시다보면, 새로운 방향도 보이고 새로운 아이디어들과 컨셉들도 생기겠죠.</p>
+      A: It’s an evolving project, so once we have new people and meet other people, the project will take another turn, and we will have different ideas and concepts.</p>
     <p>
-      K: 제가 학위를 마친지 얼마 안되어서 연구 프로세스안에서 계속 생각하게 되네요. 예컨데, 포커스 그룹(focus group)같은게 있을 수 있겠죠. 그리고 너무 자유로운 질문들보다는 더 구체적인 질문들을 떠올려 볼 수도 있겠고요. 저는 이런 방식으로 이야기하지만, 각자 이루고 싶은 일에 따라 더 도움이 되는 또 다른 옵션들이 있을거에요. 제가 이야기하는 것은 여러 방법 중 하나일 뿐이니까요.</p>
+      K: I’m kind of fresh off the research degree, so I’m still thinking in terms of the design research process. So there will be one like a focus group. And it would be a more concrete question than something more open-ended. Let’s say I phrase one thing like this, and then here are some other options that are more helpful for the task you are trying to achieve. But that’s just one approach.</p>
     <p class="description">
-      A: 마지막으로 이 인터뷰를 마무리 지으려 합니다. 앞으로는 p5js에 어떤 참여나 기여를 보고 싶으신가요?</p>
+      A: I want to conclude the interview with the last question, what kind of new participation or contribution do you wish to see in the future?</p>
     <p>
-      K: 제가 이 질문에 뭐라고 미리 규정해두고 싶은 건 없는 것 같아요. 하지만 동시에, 제 경우 딱히 새로운 아이디어를 찾고 있는 건 아니라고 말해두고 싶어요. 위에서 이야기했듯, 너무 새로운 아이디어는 받아들여지기 힘든게 현실이에요. 더 구체적인 조언이라면, 기여를 하고 싶다는 마음이 있으시면, 그리고 ‘오픈소스 소프트웨어에 기여한다는게 어떤 걸까’ 고민하고 탐구하는 자세가 있다면 ,벌써 시작 지점으로 충분하다고 생각해요.</p>
+      K: I guess there isn’t really that much I personally want to prescribe here. But at the same time, I’m not exactly looking for a new idea. As we talked about before, new ideas are hard to get accepted. So if you want something a bit more concrete, as long as anyone is interested in contributing and exploring what contribution means, that is already a good enough start.</p>
     <p>
-      그리고 저희가 오픈소스 소프트웨어 기여라고 말할때는, 꼭 코드를 써서 기여하는 것만 이야기하는게 아니에요. 심지어 Github을 전혀 쓰지 않아도 돼요.  만약에 세계화나 지역화 기여를 생각하고 계시다면, 이미 있는 번역의 오류를 찾아 고치거나 더 읽기 좋게 편집해주시는 작업도 좋아요. 만약에 쓰시는 언어가 아직 번역되지 않았다면, Processing Foundation Fellowship 이나 Google Summer of Code 오픈콜에 프로포절을 꼭 내주세요. 혹은 이런 프로세스를 거치고 싶지 않으시다면, 서드파티(3rd-party) 번역도 환영해요.</p>
+      Also, when we say contribution, it’s not just code contribution. You don’t even need to touch Github. If you think about internationalization or localization, it can be correcting an existing one if the project is already in your language. If you want to have p5js translated into a new language, put in an application like Processing Foundation Fellowship or Google Summer of Code, etc. Or if you want to do it outside of those, we will be happy for anyone to do the 3rd-party translation.</p>
     <p>
-      그리고 서드파티 번역의 장점은 저희가 링크를 걸 수 있는 번역은 있는데, 누가 관리할 의무가 있는가,와 같이 관리법에 대해 복잡한 부분들이 많이 없어져서 저희도 좋아요. 만약에 장기 관리자가 되시길 희망하시는 분이시라면, 이미 있는 번역들을 보시면서 시작하시는 것을 추천해요. 번역 프로젝트가 거대해서, 부분만 작업하길 희망하실 수 있어요. 그리고 번역문 말고도 주변에 할 작업들이 많답니다: 트랙킹 시스템 (tracking system), 유저 인터페이스 (user interface), UX 디자인(user experience), 그리고 이 모든 부분들이 어떻게 돌아가는지에 대해 문서화하는 것 까지, 중요한 과제들이 많이 남아있습니다.</p>
+      And the 3rd-party translation is great because their translation is there that we can link to it, but we don’t necessarily have the responsibility to maintain it. If later a maintainer comes along and wants to do the work long-term, they can look at that what exists in translation, if possible, as a starting point. The translation project is huge, so you may not want to work on the whole thing, but then there are also periphery things that we mentioned as well: the tracking system, user interface, user experience, and how those parts work is also an important thing you can contribute to.</p>
+    <p>[THE END]</p>
   </section>
 </article>
 <div>
