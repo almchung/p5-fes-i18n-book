@@ -40,11 +40,13 @@
 }
 
 @font-face {
-    font-family: 'SuncheonR';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonR.woff') format('woff');
+    font-family: 'GangwonEdu_OTFLightA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
 
 /* Tufte CSS styles */
 html {
@@ -87,7 +89,7 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     margin-right: 12%;
-    font-size:calc(1.5rem + 8vmin);
+    font-size:calc(2rem + 8vmin);
     line-height: 1.2;
 }
 
@@ -100,9 +102,9 @@ div.bubble-title{
 }
 
 div.bubble-title > h1 {
-  font-size: calc(1.0rem + 7vw);
+  font-size: calc(0.4rem + 7vw);
   text-align: center;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 1rem auto;
 }
 
 div.bubble-title > img {
@@ -182,13 +184,7 @@ p.subtitle {
 
 @media (prefers-color-scheme: dark) {
   .description {
-      display: block;
-      margin-right: 5%;
       color: #C4C09A;
-      font-size: 1.1rem;
-      font-weight: 300;
-      line-height: 150%;
-      font-family: 'SuncheonR', sans-serif;
   }
 }
 
