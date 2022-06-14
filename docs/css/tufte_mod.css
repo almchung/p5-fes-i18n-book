@@ -132,6 +132,10 @@ h2 {
     line-height: 1.6;
 }
 
+h2.not-ready{
+  text-decoration: line-through;
+}
+
 h3 {
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
