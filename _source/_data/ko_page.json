@@ -1,0 +1,10 @@
+[
+  {
+    "name": "ENGLISH",
+    "url": "../en/{{url}}"
+  },
+  {
+    "name": "the team",
+    "url": "../about/"
+  }
+]
