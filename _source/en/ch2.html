@@ -49,7 +49,10 @@ url: ch2
       Friendly Error System (FES) takes the simplest form of conversational user interface (UI), a debugging tool sending messages as if it’s speaking to you.
     </p>
     <p>
-      If you are having a conversation with a stranger, it will probably feel more comfortable and safe talking to someone who can hold up a coherent character, although their reaction will be predictable from time to time. Maybe for this reason, the conventional design of conversational UIs aims to present one unified persona, one coherent voice. We are familiar with designs assigning a personality to a product or any impersonal objects, as seen with ‘Siri™,’ ‘Alexa™,’ or ‘Hatsune Miku™,’ which is now widely accepted and to some extend expected.
+      If you are having a conversation with a stranger, it will probably feel more comfortable and safe talking to someone who can hold up a coherent character, although their reaction will be predictable from time to time.
+    </p>
+    <p>
+      Maybe for this reason, the conventional design of conversational UIs aims to present one unified persona, one coherent voice. We are familiar with designs assigning a personality to a product or any impersonal objects, as seen with ‘Siri™,’ ‘Alexa™,’ or ‘Hatsune Miku™,’ which is now widely accepted and to some extend expected.
     </p>
   </section>
   <section>
@@ -67,34 +70,34 @@ url: ch2
       If it is too hard for you to try anthropomorphizing software, you can think of this as an effort to maintain a consistent language across p5js software and its documentation. Then, let’s continue talking about how specifically we will design a machine persona as a member of the p5js community.
     </p>
   <section>
-    <h2 id="code_of_conduct">행동강령을 따르는 기계 페르소나</h2>
+    <h2 id="code_of_conduct">machine persona follows the code of conduct</h2>
     <p>
-      p5js 커뮤니티의 일부이자 결과물인 FES의 페르소나가 p5js 커뮤니티의 규칙, 행동강령이 이야기하는 태도와 어긋난다면 어떤 느낌이 들까요? 만드는 사람들이 추구하는 윤리관과 디자인을 일치시키려는 노력 속에서 어떤 소프트웨어가 만들어질 수 있을까요?
+      How would you feel if Friendly Error System’s output contradicts with the core value of the p5js community? What kind of software can be created by a design criteria that centralize ethics of a community developing it?
     </p>
     <p>
-      이 질문 안에서 기계에게 윤리 강령을 적용한다는 관념을 두고  아시모프의 로봇공학의 삼원칙이 떠오를지도 모르겠습니다. 과거에 공상과학소설 속에서 논하던 이와 같은 행동 강령들은 이제는 상상의 세계에서 나아가 실제 인공지능 학계나 공학계에서 논하고 있는 기술 윤리학, 특히 인공지능 윤리학에 많은 영향을 끼치고 있습니다. 2016년을 기점으로 전세계 많은 연구소들과 기업들에서도 자신들만의 버전을 내놓고 있습니다.<label for="sn-aiethicsguideline" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-aiethicsguideline" class="margin-toggle"/><span class="sidenote">인공지능 윤리 가이드라인에 대해 연구한 다음 논문을 참고했습니다: <br><code class="sidenote-ref">Hagendorff, Thilo. "The ethics of AI ethics: An evaluation of guidelines." Minds and Machines 30.1 (2020): 99-120.</code></span>
+      Maybe this question reminds you of Asimov's Three Principles of Robotics from 1942, the notion of applying a code of conduct to machines. The code of conduct for an artificial agent, are now moved beyond the speculative realm, became more than relevant to the design and application of AI models impacting our everyday life. As of 2016, various research institutes and companies around the world had released their own versions of code of conduct for AI and related technology.<label for="sn-aiethicsguideline" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-aiethicsguideline" class="margin-toggle"/><span class="sidenote">A meta-analysis paper surveying 22 AI ethics guidelines in 2016-2020 published by tech companies and academic institutes: <br><code class="sidenote-ref">Hagendorff, Thilo. "The ethics of AI ethics: An evaluation of guidelines." Minds and Machines 30.1 (2020): 99-120.</code></span>
     </p>
     <p>
-      이런 의도를 가지고, 이제 p5js의 커뮤니티 규칙, 윤리행동강령(code of conduct)을 들여다보도록 합시다:<label for="sn-aiethicsguideline" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-aiethicsguideline" class="margin-toggle"/><span class="sidenote">네이버 국어사전에서 “윤리행동강령(code of conduct)”을 국어 사전에서 찾아보면 “단체나 기업 등이 그 구성원으로서 마땅히 지켜야 할 도리를 명시해 놓은 것”이라 설명합니다. p5js의 행동강령 또한 커뮤니티 구성원들이 지켜야 할 도리와 그 실천법을 이야기하고 있습니다. 아래 번역분의 원문은 <a href="https://github.com/processing/p5.js/blob/main/CODE_OF_CONDUCT.md#p5js-code-of-conduct">p5.js Code of Conduct</a>에서 볼 수 있습니다.</span>
+      With this background, let’s take a look at the p5js’ code of conduct:<label for="sn-aiethicsguideline" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-aiethicsguideline" class="margin-toggle"/><span class="sidenote">You can read the full statement at <a href="https://github.com/processing/p5.js/blob/main/CODE_OF_CONDUCT.md#p5js-code-of-conduct">p5.js Code of Conduct</a></span>.
     </p>
     <ul class="listblock">
-      <li>사려 깊은 언어를 사용합니다. 다음 중 어느 행동도 허락하지 않습니다:</li>
+      <li>Be mindful of your language. Any of the following behavior is unacceptable:</li>
         <ul class="listblock">
-          <li>성정체성 및 성표현, 성적지향성, 인종, 민족, 언어, 뉴로타입(neurotype), 체형, 장애, 계급, 종교, 문화, 하위문화, 정치적의견, 나이, 숙련도, 직업, 혹은 성장배경을 비방하는 발언</li>
-          <li>폭력행사 협박</li>
-          <li>고의적 압박</li>
-          <li>맥락 없고 사전경고 없이 성적으로 노골적인 폭력적인 게시물</li>
-          <li>원치 않는 성적 관심</li>
-          <li>스토킹이나 염탐</li>
-          <li>혹은 어떠한 종류를 막론한 괴롭힘</li>
+          <li>Offensive comments related to gender identity and expression, sexual orientation, race, ethnicity, language, neuro-type, size, ability, class, religion, culture, subculture, political opinion, age, skill level, occupation, or background</li>
+          <li>Threats of violence</li>
+          <li>Deliberate intimidation</li>
+          <li>Sexually explicit or violent material that is not contextualized and preceded by a considerate warning</li>
+          <li>Unwelcome sexual attention</li>
+          <li>Stalking or following</li>
+          <li>Or any other kinds of harassment</li>
         </ul>
-      <li>상식에 맞게 행동합니다. 다른 사람들을 불편하게 할 것 같으면 공유하지 마세요.</li>
-      <li>서로 존중합니다. 의견이 다르더라도 인내심과 관심을 가지고 모든 상황을 접근하도록 합니다.</li>
-      <li>서로 배려합니다. 당신의 행동이 커뮤니티 내 다른 사람들에게 어떤 영향을 미칠지를 생각해봅니다.</li>
-      <li>열린 마음을 가집니다. 새로운 사람들과 새로운 아이디어를 포용합니다. 우리 커뮤니티는 언제나 진화해가고, 긍정적인 변화를 환영합니다.</li>
+      <li>Use your best judgement. If it will possibly make others uncomfortable, do not post it.</li>
+      <li>Be respectful. Disagreement is not an opportunity to attack someone else's thoughts or opinions. Although views may differ, remember to approach every situation with patience and care.</li>
+      <li>Be considerate. Think about how your contribution will affect others in the community.</li>
+      <li>Be open minded. Embrace new people and new ideas. Our community is continually evolving and we welcome positive change.</li>
     </ul>
     <p>
-      위에 보시다시피 행동강령에는 어떤 행동들을 금지하고, 의견충돌이 발생했을때 기본적으로 따르는 방식을 제공하고 있습니다.
+      As we seen above, a code of conduct prohibits certain behaviors and provides standards for resolving disagreement.
     </p>
     <p>
       금지된 행동들에는 무엇이 차별 및 폭력 행위에 속하는지 명시되어 있습니다. “성정체성 및 성표현, 성적지향성, 인종, 민족, 언어, 뉴로타입(neurotype), 체형, 장애, 계급, 종교, 문화, 하위문화, 정치적의견, 나이, 숙련도, 직업, 그리고 성장배경을 비방하는” 표현을 쓰지 않도록 최선을 다해 주의를 기울이고, 검토하는 시간을 가지겠다는 약속이 되겠죠.

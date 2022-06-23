@@ -58,36 +58,39 @@
 
   <section>
     <p>
-      <친절한 에러메시지 시스템 (FES)>는 대화형 인터페이스의 형식, 디버거가 말을 걸어오는 형식을 채택하고 있습니다. 우리가 누군가와 일대일 대화를 나누는 상황을 떠올려보면, 일반적인 반응에 대해 다소 예측이 가능하면서도 일정한 대화 톤을 가진 상대와 대화하는 편이 보다 편안하게 와닿겠죠.
+      <친절한 에러메시지 시스템 (FES)>는 아주 간단한 대화형 인터페이스, 디버깅 툴이 대화하듯 메시지를 출력하는 형식을 채택하고 있습니다.
     </p>
     <p>
-      때문에 이 인터페이스가 하나의 페르소나, 하나의 통합된 톤을 가지는 게 더욱 자연스럽게 느껴지게 됩니다. 우리가 지금 일상에서 흔히 접하는 '시리', '알렉사', '하츠네 미쿠'와 같이 상품-또는 비인격체-에 인격을 부여하는 방식은 이미 사람들에게 널리 받아들여지고 있지요.
+      우리가 낯선 사람과 대화를 나누는 상황을 떠올려보면, 상대방의 캐릭터가 휙휙 변하지 않는 편이 보다 편안하고 안전하게 느껴지겠죠. (때때로 대화가 예상한대로 흘러가겠지만요.)
+    </p>
+    <p>
+      어쩌면 이런 사정때문에 대부분의 대화형 인터페이스가 하나의 페르소나, 하나의 통합된 목소리를 보여주는데 초점이 맞춰지는 것 같습니다. 이제 일상에서 흔히 접하는 '시리', '알렉사', ‘하츠네 미쿠'에서 볼수 있는 상품-또는 비인격체-에 인격을 부여하는 방식은 이미 사람들에게 널리 받아들여지고 있고, 심지어 어느 경우에는 이런 가상 인격 설정을 기대하게 되기까지 합니다.
     </p>
   </section>
   <section>
     <h2 id="consistency">일관된 페르소나를 지니는 에러 메시지</h2>
     <p>
-      대화형 인터페이스를 개발할 때 가상의 발화자인 페르소나<label for="sn-persona" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-persona" class="margin-toggle"/><span class="sidenote">“페르소나는 가면을 뜻하는 희랍어로 개인이 사회적 요구들에 대한 반응으로서 밖으로 내놓는 공적 얼굴이다”라고 위키피디아가 소개하고 있습니다. 여기서는 소프트웨어가 출력하는 대화형 메시지의 톤을 통일하기 위해 설정하는 가상의 캐릭터나 대화문 작성 가이드라인을 의미합니다. </span>를 정해두고 대화 메시지를 작성하는 것은 작업을 체계적으로 바꿔줄 뿐만 아니라, 사용자 경험에 통일감을 주어 인터페이스의 사용감을 향상하고 사용자의 신뢰를 굳건히 하는 데에도  도움이 됩니다.<label for="sn-chatbotux" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-chatbotux" class="margin-toggle"/><span class="sidenote">챗봇 디자인과 사용자 경험 관계에 대한 연구 결과들을 담은 다음 논문의 내용을 인용하였습니다: <br><code class="sidenote-ref">Følstad, Asbjørn, and Marita Skjuve. "Chatbots for customer service: user experience and motivation." Proceedings of the 1st international conference on conversational user interfaces. 2019.</code></span>
+      대화형 인터페이스를 개발할 때 가상의 발화자인 페르소나<label for="sn-persona" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-persona" class="margin-toggle"/><span class="sidenote">“페르소나는 가면을 뜻하는 희랍어로 개인이 사회적 요구들에 대한 반응으로서 밖으로 내놓는 공적 얼굴이다”라고 위키피디아가 소개하고 있습니다. 여기서는 소프트웨어가 출력하는 대화형 메시지의 톤을 통일하기 위해 설정하는 가상의 캐릭터나 대화문 작성 가이드라인을 의미합니다. </span>를 정해두고 대화 메시지를 작성하는 것은 작업을 체계적으로 바꿔줄 뿐만 아니라, 사용자 경험에 통일감을 주어 인터페이스의 사용감을 향상하고 사용자의 신뢰를 굳건히 하는 데에도 도움이 됩니다.<label for="sn-chatbotux" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-chatbotux" class="margin-toggle"/><span class="sidenote">챗봇 디자인과 사용자 경험 관계에 대한 연구 결과들을 담은 다음 논문의 내용을 인용하였습니다: <br><code class="sidenote-ref">Følstad, Asbjørn, and Marita Skjuve. "Chatbots for customer service: user experience and motivation." Proceedings of the 1st international conference on conversational user interfaces. 2019.</code></span>
     </p>
     <p>
       여기에서는 기계에게 가상의 페르소나를 구축하며 발생할 수 있는 많은 논의점 중 하나로 디자인 결과물과 소프트웨어를 개발하는 커뮤니티가 지향하는 행동강령과의 관계를 제시해 보려 합니다.
     </p>
     <p>
-      p5js는 하나의 상품이 아닌 오픈 소스 소프트웨어 커뮤니티의 한 부분<label for="sn-ossc" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-ossc" class="margin-toggle"/><span class="sidenote">리눅스 배포판에 많은 기여를 한 Red Hat 회사가 <a href="https://www.redhat.com/en/resources/frequently-asked-questions-about-open-source-software-communities">오픈 소스 소프트웨어 커뮤니티(open source software community)에 대해 설명해둔 글</a>을 번역해 옮깁니다: <code class="sidenote-ref">오픈 소스 소프트웨어 커뮤니티는 오픈 소스 소프트웨어 어떤 특정한 곳의 개발, 유지, 확장, 그리고 홍보활동을 위해 모인 사람들의 커뮤니티를 말합니다. 대부분의 경우 이 커뮤니티들은 세계 곳곳 에서 모인, 다양한 산업에 종사하고 있는 사람들이 참여하고 있습니다. 이런 다양한 배경의 사람들은 오픈 소스 소프트웨어 프로젝트에 대한 비젼, 그리고 커뮤니티가 주는 동지애와 소속감을 통해 하나로 모였습니다.</code> </span>이자 여러 곳의 다양한 사람들을 대면하는 소프트웨어이기도 합니다. 단체의 일원이 소속 단체 이념을 비추어 다른 이를 대하듯, FE의 페르소나 또한 p5js 커뮤니티의 일원으로 상정하는데서 시작해 구축해나가보면 어떨까요?
+      p5js는 하나의 상품이 아닌 오픈 소스 소프트웨어 개발 공동체<label for="sn-ossc" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-ossc" class="margin-toggle"/><span class="sidenote">리눅스 배포판에 많은 기여를 한 Red Hat 회사가 <a href="https://www.redhat.com/en/resources/frequently-asked-questions-about-open-source-software-communities">오픈 소스 소프트웨어 커뮤니티(open source software community)에 대해 설명해둔 글</a>을 번역해 옮깁니다: <code class="sidenote-ref">오픈 소스 소프트웨어 커뮤니티는 오픈 소스 소프트웨어 어떤 특정한 곳의 개발, 유지, 확장, 그리고 홍보활동을 위해 모인 사람들의 커뮤니티를 말합니다. 대부분의 경우 이 커뮤니티들은 세계 곳곳 에서 모인, 다양한 산업에 종사하고 있는 사람들이 참여하고 있습니다. 이런 다양한 배경의 사람들은 오픈 소스 소프트웨어 프로젝트에 대한 비젼, 그리고 커뮤니티가 주는 동지애와 소속감을 통해 하나로 모였습니다.</code> </span>의 한 부분이자 다양한 사람들을 이어주는 인터페이스이기도 합니다. 단체에 소속된 사람이 단체의 뜻을 실천하려 노력하는 모습을 본따, FES의 페르소나를 p5js 커뮤니티의 일원으로 생각하며 만들기 시작해보면 어떨까요?
     </p>
     <p>
-      소프트웨어를 인격화하여 생각하는 것이 힘들다면, 이를 브랜딩의 일환, p5js 소프트웨어와 관련 문서 전반적으로 일관적인 언어를 유지하려는 노력으로 생각해볼 수도 있겠습니다. 그럼 구체적으로 p5js 커뮤니티의 일원으로서 페르소나를 구축하는 방법을 생각해봅시다.
+      소프트웨어를 인간화하는 방식이 받아들이기 힘들다면, 이를 p5js 소프트웨어와 관련 문서의 언어를 일관적으로 유지해보려는 노력으로 생각해볼 수도 있겠습니다. 그럼 구체적으로 p5js 커뮤니티의 일원으로서 기계 페르소나를 구축하는 방법을 생각해봅시다.
     </p>
   <section>
     <h2 id="code_of_conduct">행동강령을 따르는 기계 페르소나</h2>
     <p>
-      p5js 커뮤니티의 일부이자 결과물인 FES의 페르소나가 p5js 커뮤니티의 규칙, 행동강령이 이야기하는 태도와 어긋난다면 어떤 느낌이 들까요? 만드는 사람들이 추구하는 윤리관과 디자인을 일치시키려는 노력 속에서 어떤 소프트웨어가 만들어질 수 있을까요?
+      FES의 출력물이 p5js 커뮤니티의 규칙, 행동강령이 이야기하는 태도와 어긋난다면 어떤 느낌이 들까요? 만드는 사람들이 추구하는 윤리관과 디자인을 일치시키려는 노력 속에서 어떤 소프트웨어가 만들어질 수 있을까요?
     </p>
     <p>
-      이 질문 안에서 기계에게 윤리 강령을 적용한다는 관념을 두고  아시모프의 로봇공학의 삼원칙이 떠오를지도 모르겠습니다. 과거에 공상과학소설 속에서 논하던 이와 같은 행동 강령들은 이제는 상상의 세계에서 나아가 실제 인공지능 학계나 공학계에서 논하고 있는 기술 윤리학, 특히 인공지능 윤리학에 많은 영향을 끼치고 있습니다. 2016년을 기점으로 전세계 많은 연구소들과 기업들에서도 자신들만의 버전을 내놓고 있습니다.<label for="sn-aiethicsguideline" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-aiethicsguideline" class="margin-toggle"/><span class="sidenote">인공지능 윤리 가이드라인에 대해 연구한 다음 논문을 참고했습니다: <br><code class="sidenote-ref">Hagendorff, Thilo. "The ethics of AI ethics: An evaluation of guidelines." Minds and Machines 30.1 (2020): 99-120.</code></span>
+      기계에 윤리 강령을 적용해보는 이 질문에서 1942년 아시모프의 로봇공학의 삼원칙이 떠오를지도 모르겠습니다. 과거 사변적(speculative) 사고 속에서 논하던 행동 강령들은 이제는 실제 생활에서 쓰이는 인공지능 모델의 디자인과 적용법에 많은 영향을 끼치고 있습니다. 2016년을 기점으로 전세계 많은 연구소들과 기업들도 인공지능과 관련 기술 윤리 가이드라인들을 자신들만의 버전으로 내놓고 있습니다.<label for="sn-aiethicsguideline" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-aiethicsguideline" class="margin-toggle"/><span class="sidenote">인공지능 윤리 가이드라인에 대해 연구한 다음 논문을 참고했습니다: <br><code class="sidenote-ref">Hagendorff, Thilo. "The ethics of AI ethics: An evaluation of guidelines." Minds and Machines 30.1 (2020): 99-120.</code></span>
     </p>
     <p>
-      이런 의도를 가지고, 이제 p5js의 커뮤니티 규칙, 윤리행동강령(code of conduct)을 들여다보도록 합시다:<label for="sn-aiethicsguideline" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-aiethicsguideline" class="margin-toggle"/><span class="sidenote">네이버 국어사전에서 “윤리행동강령(code of conduct)”을 국어 사전에서 찾아보면 “단체나 기업 등이 그 구성원으로서 마땅히 지켜야 할 도리를 명시해 놓은 것”이라 설명합니다. p5js의 행동강령 또한 커뮤니티 구성원들이 지켜야 할 도리와 그 실천법을 이야기하고 있습니다. 아래 번역분의 원문은 <a href="https://github.com/processing/p5.js/blob/main/CODE_OF_CONDUCT.md#p5js-code-of-conduct">p5.js Code of Conduct</a>에서 볼 수 있습니다.</span>
+      이런 배경 속에서, 이제 p5js의 커뮤니티로 돌아와, p5js의 윤리행동강령(code of conduct)을 들여다보도록 합시다:<label for="sn-aiethicsguideline" class="margin-toggle sidenote-number">&#8853;</label><input type="checkbox" id="sn-aiethicsguideline" class="margin-toggle"/><span class="sidenote">네이버 국어사전에서 “윤리행동강령(code of conduct)”을 찾아보면 “단체나 기업 등이 그 구성원으로서 마땅히 지켜야 할 도리를 명시해 놓은 것”이라 설명합니다. p5js의 행동강령 또한 커뮤니티 구성원들이 지켜야 할 도리와 그 실천법을 이야기하고 있습니다. 아래 번역분의 원문은 <a href="https://github.com/processing/p5.js/blob/main/CODE_OF_CONDUCT.md#p5js-code-of-conduct">p5.js Code of Conduct</a>에서 볼 수 있습니다.</span>
     </p>
     <ul class="listblock">
       <li>사려 깊은 언어를 사용합니다. 다음 중 어느 행동도 허락하지 않습니다:</li>
